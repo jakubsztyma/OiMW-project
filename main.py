@@ -1,10 +1,29 @@
 import fire
 from chess import engine as chess_engine, pgn
 
+LIMIT = chess_engine.Limit(time=0.1)
+
+def get_output(move1, move2):
+    return [board.fen()]
+
+def meets_conditions(move1, move2):
+    # Moves are sorted starting by the best
+    score1 = move1['score'].white().score()
+    score2 = move2['score'].white().score()
+    return max(score1, score2) > 100 + min(score1, score2)
 
 def handle_game(engine, game):
     print(game.headers['Event'])
-    return 'Test'
+    positions = []
+    board = game.board()
+
+    for move in game.mainline_moves():
+        move1, move2 = engine.analyse(board, LIMIT, multipv=2)
+        if meets_conditions(move1, move2):
+            node_output = get_output(move1, move2)
+            positions.extend(node_output)
+        board.push(move)
+    return positions[:2]
 
 
 def entrypoint(
@@ -22,16 +41,17 @@ def entrypoint(
     engine = chess_engine.SimpleEngine.popen_uci(e)
 
     with open(input_path, 'r') as input_, open(output_path, 'w') as output:
-        while True:
+        game = pgn.read_game(input_)
+        # while game:
+        for _ in range(10):
             try:
-                game = pgn.read_game(input_)
-                if game is None:
-                    break
-
-                result = handle_game(engine, game)
-                output.write(result)
+                positions = handle_game(engine, game)
+                for position in positions:
+                    output.write(position + '\n')
             except Exception as ex:
                 print(ex)
+            finally:
+                game = pgn.read_game(input_)
 
     engine.quit()
 
