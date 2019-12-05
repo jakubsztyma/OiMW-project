@@ -1,0 +1,50 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "577a7cb711ea4491b82a6abc1b79c25d83d202deab2c5a0bcf7684daf114237a"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "fire": {
+            "hashes": [
+                "sha256:6865fefc6981a713d2ce56a2a2c92c56c729269f74a6cddd6f4b94d16ae084c9"
+            ],
+            "index": "pypi",
+            "version": "==0.2.1"
+        },
+        "python-chess": {
+            "hashes": [
+                "sha256:1bf1e2505679b835f15ac9143b404f04727dec7ca1a00373f5e8eb5424d4264b",
+                "sha256:361aedbab0dbf811ce33bc2b3d296c6d1680736e57e2a26ea77e6f4a3bc5721d"
+            ],
+            "index": "pypi",
+            "version": "==0.29.0"
+        },
+        "six": {
+            "hashes": [
+                "sha256:1f1b7d42e254082a9db6279deae68afb421ceba6158efa6131de7b3003ee93fd",
+                "sha256:30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66"
+            ],
+            "version": "==1.13.0"
+        },
+        "termcolor": {
+            "hashes": [
+                "sha256:1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b",
+                "sha256:a23a711557365d1f0f85c3899177ac0108e9b392aa03788a3000227a75ba511a"
+            ],
+            "version": "==1.1.0"
+        }
+    },
+    "develop": {}
+}
