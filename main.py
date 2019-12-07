@@ -1,5 +1,3 @@
-import collections
-
 import fire
 from chess import engine as chess_engine, pgn
 
@@ -14,6 +12,9 @@ class Solver:
         self.cp = cp
         self.limit = chess_engine.Limit(depth=d)
         self.engine = chess_engine.SimpleEngine.popen_uci(e)
+
+    def __del__(self):
+        self.engine.quit()
 
     def get_output(self, board, moves):
         # TODO format output accordingly to specification
@@ -40,7 +41,7 @@ class Solver:
             evaluated_moves = self.engine.analyse(board, self.limit, multipv=self.n)
             best_move, second_best_move = evaluated_moves[:2]
             if self.meets_conditions(best_move, second_best_move):
-                print(f'Move found {best_move["pv"][0]}')
+                # print(f'Move found {best_move["pv"][0]}')
                 node_output = self.get_output(board, evaluated_moves)
                 positions.extend(node_output)
             board.push(move)
@@ -72,8 +73,6 @@ def entrypoint(
                 print(ex)
             finally:
                 game = pgn.read_game(input_)
-
-    solver.engine.quit()
 
 
 if __name__ == '__main__':
