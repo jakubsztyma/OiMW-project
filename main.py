@@ -4,6 +4,9 @@ import fire
 from chess import engine as chess_engine, pgn
 
 
+STOCKFISH_PATH = 'stockfish-10/Linux/stockfish_10_x64'
+
+
 class Solver:
     def __init__(self, h, cp, d, n, e):
         self.h = h
@@ -51,7 +54,7 @@ def entrypoint(
         cp=50,
         d=30,
         n=2,
-        e='stockfish-10/Linux/stockfish_10_x64',
+        e=STOCKFISH_PATH,
         # TODO chess engine params
 ):
     print(input_path, output_path, h, cp, d, n, e)  # Show selected params
