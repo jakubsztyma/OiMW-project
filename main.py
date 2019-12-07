@@ -3,21 +3,27 @@ import collections
 import fire
 from chess import engine as chess_engine, pgn
 
-LIMIT = chess_engine.Limit(time=0.1)
-
 
 class Solver:
-    def __init__(self, cp, d, n, e):
+    def __init__(self, h, cp, d, n, e):
+        self.h = h
         self.n = n
-        self.d = d
         self.cp = cp
+        self.limit = chess_engine.Limit(depth=d)
         self.engine = chess_engine.SimpleEngine.popen_uci(e)
 
-
     def get_output(self, board, moves):
-        return [board.fen()]
+        # TODO format output accordingly to specification
+        result = []
+        for move in moves:
+            uci_move = move['pv'][0]
+            board.push(uci_move)
+            result.append(board.fen())
+            board.pop()
+        return result
 
     def meets_conditions(self, best_move, second_best_move):
+        # TODO add other constraints
         # Moves are sorted starting by the best
         score1 = best_move['score'].white().score()
         score2 = second_best_move['score'].white().score()
@@ -28,13 +34,14 @@ class Solver:
         board = game.board()
 
         for move in game.mainline_moves():
-            evaluated_moves = self.engine.analyse(board, LIMIT, multipv=self.n)
+            evaluated_moves = self.engine.analyse(board, self.limit, multipv=self.n)
             best_move, second_best_move = evaluated_moves[:2]
             if self.meets_conditions(best_move, second_best_move):
-                node_output = self.get_output(evaluated_moves)
+                print(f'Move found {best_move["pv"][0]}')
+                node_output = self.get_output(board, evaluated_moves)
                 positions.extend(node_output)
             board.push(move)
-        return positions[:2]
+        return positions
 
 
 def entrypoint(
@@ -48,7 +55,7 @@ def entrypoint(
         # TODO chess engine params
 ):
     print(input_path, output_path, h, cp, d, n, e)  # Show selected params
-    solver = Solver(cp, d, n, e)
+    solver = Solver(h, cp, d, n, e)
 
     with open(input_path, 'r') as input_, open(output_path, 'w') as output:
         game = pgn.read_game(input_)
