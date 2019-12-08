@@ -1,6 +1,10 @@
+from time import time
+
 import fire
 from chess import engine as chess_engine, pgn
 
+# 145
+# 93
 
 STOCKFISH_PATH = 'stockfish-10/Linux/stockfish_10_x64'
 
@@ -8,12 +12,13 @@ STOCKFISH_PATH = 'stockfish-10/Linux/stockfish_10_x64'
 class Solver:
     CONCISE_HEADERS = {'White', 'Black', 'Site', 'Date'}
 
-    def __init__(self, h, cp, d, n, e):
+    def __init__(self, h, cp, d, n, e, **kwargs):
         self.h = h
         self.n = n
         self.cp = cp
         self.limit = chess_engine.Limit(depth=d)
         self.engine = chess_engine.SimpleEngine.popen_uci(e)
+        self.engine.configure(kwargs)
 
     def __del__(self):
         self.engine.quit()
@@ -22,17 +27,12 @@ class Solver:
         if self.h == 'minimal':
             return {}
         elif self.h == 'concise':
-            return {key: val for key, val in game_headers if key in self.CONCISE_HEADERS}
+            result = {key: val for key, val in game_headers.items() if key in self.CONCISE_HEADERS}
+            return result
         elif self.h == 'all':
             return game_headers
         else:
             raise Exception('Invalid h parameter')
-
-
-    def format_game_output(self, default_headers, board):
-        headers = {'fen':board.fen(), **default_headers}
-        game = pgn.Game(headers=headers)
-        return str(game)
 
     def get_output(self, headers, board, moves):
         # TODO format output accordingly to specification
@@ -40,8 +40,9 @@ class Solver:
         for move in moves:
             uci_move = move['pv'][0]
             board.push(uci_move)
-            # result.append(board.fen())
-            result.append(self.format_game_output(headers, board))
+            output_headers = {'fen':board.fen(), **headers}
+            game = pgn.Game(headers=output_headers)
+            result.append(str(game))
             board.pop()
         return result
 
@@ -76,16 +77,17 @@ def entrypoint(
         d=30,
         n=2,
         e=STOCKFISH_PATH,
-        # TODO chess engine params
+        **kwargs
 ):
 
     print(input_path, output_path, h, cp, d, n, e)  # Show selected params
-    solver = Solver(h, cp, d, n, e)
+    solver = Solver(h, cp, d, n, e, **kwargs)
 
     with open(input_path, 'r') as input_, open(output_path, 'w') as output:
         game = pgn.read_game(input_)
         # while game:
-        for _ in range(2):
+        start = time()
+        for _ in range(5):
             try:
                 positions = solver.handle_game(game)
                 for position in positions:
@@ -94,6 +96,7 @@ def entrypoint(
                 print(ex)
             finally:
                 game = pgn.read_game(input_)
+        print(time() - start)
 
 
 if __name__ == '__main__':
