@@ -3,10 +3,21 @@ from time import time
 import fire
 from chess import engine as chess_engine, pgn
 
+import json
+
 # 145
 # 93
 
 STOCKFISH_PATH = 'stockfish-10/Linux/stockfish_10_x64'
+
+
+class ConfigurationReader:
+
+    @staticmethod
+    def load_configuration(config_file_path):
+        with open(config_file_path) as json_data_file:
+            config = json.load(json_data_file)
+        return config
 
 
 class Solver:
@@ -81,6 +92,9 @@ def entrypoint(
 ):
 
     print(input_path, output_path, h, cp, d, n, e)  # Show selected params
+
+    configuration = ConfigurationReader.load_configuration(e)
+
     solver = Solver(h, cp, d, n, e, **kwargs)
 
     with open(input_path, 'r') as input_, open(output_path, 'w') as output:

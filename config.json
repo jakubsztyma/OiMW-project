@@ -1,0 +1,21 @@
+{
+    "uci_server":{
+        "url":"localhost",
+        "login":"root",
+        "password":"my secret password",
+        "engine": {
+          "name": "Stockfish 10 x64",
+          "options": {
+            "threads": 4,
+            "hash": 1024
+          }
+        }
+    },
+    "filtering":{
+        "position_filters":[
+            "filter1",
+            "filter2"
+            ],
+        "moves_number":1
+    }
+}
