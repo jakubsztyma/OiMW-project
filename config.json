@@ -1,4 +1,5 @@
 {
+    "stockfish_path": "C:\\Users\\kapis\\Desktop\\PUT TODELETE\\magisterka\\semestr2\\Odkrywanie i Modelowanie Wiedzy\\Laboratoria\\uciServer\\engines\\stockfish_10_x64.exe",
     "uci_server":{
         "url":"localhost",
         "login":"root",

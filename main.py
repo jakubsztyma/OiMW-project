@@ -23,13 +23,14 @@ class ConfigurationReader:
 class Solver:
     CONCISE_HEADERS = {'White', 'Black', 'Site', 'Date'}
 
-    def __init__(self, h, cp, d, n, e, **kwargs):
+    def __init__(self, h, cp, d, n, config, **kwargs):
         self.h = h
         self.n = n
         self.cp = cp
         self.limit = chess_engine.Limit(depth=d)
-        self.engine = chess_engine.SimpleEngine.popen_uci(e)
+        self.engine = chess_engine.SimpleEngine.popen_uci(config['stockfish_path'])
         self.engine.configure(kwargs)
+        self.configuration = config
 
     def __del__(self):
         self.engine.quit()
@@ -95,7 +96,7 @@ def entrypoint(
 
     configuration = ConfigurationReader.load_configuration(e)
 
-    solver = Solver(h, cp, d, n, e, **kwargs)
+    solver = Solver(h, cp, d, n, configuration, **kwargs)
 
     with open(input_path, 'r') as input_, open(output_path, 'w') as output:
         game = pgn.read_game(input_)
