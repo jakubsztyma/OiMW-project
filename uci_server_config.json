@@ -1,0 +1,6 @@
+{
+  "login": "test",
+  "password": "111111",
+  "uci_server_url": "http://localhost:8080/",
+  "uci_server_socket_url": "ws://localhost:8080/ws_engine"
+}
