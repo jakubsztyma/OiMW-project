@@ -59,12 +59,21 @@ class Solver:
 
         for move in game.mainline_moves():
             evaluated_moves = self.engine.analyse(board.fen(), self.limit, cores=self.cpu_cores)
-            #ff.not_a_starting_move(game, move, evaluated_moves)
-            best_move, second_best_move = evaluated_moves[:2]
-            if self.meets_conditions(best_move, second_best_move):
-                print(f'Move found {best_move["pv"][0]}')
-                node_output = self.get_output(headers, board, evaluated_moves)
-                positions.extend(node_output)
+            
+            depth = 8
+            best_move = evaluated_moves[(depth-1)*2]['pv'][0]
+
+            state = True
+            state = ff.not_a_starting_move(state, board, n_ignore=2)
+            state = ff.better_than_second(state, evaluated_moves, depth=depth, min_diff=10)
+            state = ff.still_the_best_move(state, evaluated_moves, depth=depth+1, best_move=best_move) 
+            state = ff.still_the_best_move(state, evaluated_moves, depth=depth+2, best_move=best_move) 
+            
+            if state: #then all conditions are met and the move is noteworthy
+                #print(f'Move found {best_move["pv"][0]}')
+                #node_output = self.get_output(headers, board, evaluated_moves)
+                #positions.extend(node_output)
+                pass
             board.push(move)
         return positions
 
@@ -73,8 +82,8 @@ def entrypoint(
         input_path = "test_pgn.pgn",
         output_path = "out.test",
         h='minimal',
-        cp=50,
-        d=10,
+        cp=50, #args should proably be palced with filters
+        d=10, 
         cpu_cores=2,
         **kwargs
 ):
