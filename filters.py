@@ -1,3 +1,6 @@
+from chess import Move
+
+
 #   _   _       _                 _             _   _
 #  | \ | |     | |               | |           | | (_)
 #  |  \| | ___ | |_    __ _   ___| |_ __ _ _ __| |_ _ _ __   __ _   _ __ ___   _____   _____
@@ -10,7 +13,7 @@
 #
 # ARGS:
 # state -> False if any conditions proceeding this one was False
-# evaluated_moves -> processed output of stockfish evaluation
+# board -> current board state
 #
 # n_ignore -> the number of first fullmoves to ignore from evaluation
 
@@ -70,9 +73,62 @@ def better_than_second(state, evaluated_moves, depth, min_diff):
 
 
 def still_the_best_move(state, evaluated_moves, depth, best_move):
-    a = evaluated_moves[(depth - 1) * 2]["pv"][0]
-    b = best_move
     if not state or evaluated_moves[(depth - 1) * 2]["pv"][0] != best_move:
+        return False
+    else:
+        return True
+
+
+#   _____ __        _               _
+#  |_   _/ _|      | |             | |
+#    | || |_    ___| |__   ___  ___| | __
+#    | ||  _|  / __| '_ \ / _ \/ __| |/ /
+#   _| || |   | (__| | | |  __/ (__|   <
+#   \___/_|    \___|_| |_|\___|\___|_|\_\
+#
+# Test if the best move results in check or the current possition is a checkmate.
+#
+# ARGS:
+# state -> False if any conditions proceeding this one was False
+# board -> current board state
+#
+# best_move -> move that is considered
+
+
+def if_check(state, board, best_move):
+    if (
+        not state
+        or board.is_checkmate()
+        or board.is_into_check(Move.from_uci(best_move))
+    ):
+        return False
+    else:
+        return True
+
+
+#   _____ __                   _            _       _               _
+#  |_   _/ _|                 | |          (_)     | |             (_)
+#    | || |_   _ __ ___   __ _| |_ ___ _ __ _  __ _| |   __ _  __ _ _ _ __
+#    | ||  _| | '_ ` _ \ / _` | __/ _ \ '__| |/ _` | |  / _` |/ _` | | '_ \
+#   _| || |   | | | | | | (_| | ||  __/ |  | | (_| | | | (_| | (_| | | | | |
+#   \___/_|   |_| |_| |_|\__,_|\__\___|_|  |_|\__,_|_|  \__, |\__,_|_|_| |_|
+#                                                        __/ |
+#                                                       |___/
+# Check if move results in material gain.
+#
+# ARGS:
+# state -> False if any conditions proceeding this one was False
+# board -> current board state
+#
+# best_move -> move that is considered
+
+
+def if_material_gain(state, board, best_move):
+    if not state:
+        return False
+    target = Move.from_uci(best_move).to_square
+    piece_at_target = board.piece_at(target)
+    if piece_at_target is not None:
         return False
     else:
         return True

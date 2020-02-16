@@ -65,11 +65,12 @@ class Solver:
                 board.fen(), self.limit, cores=self.cpu_cores
             )
 
-            depth = 8
+            depth = 5
             best_move = evaluated_moves[(depth - 1) * 2]["pv"][0]
-
             state = True
+
             state = ff.not_a_starting_move(state, board, n_ignore=2)
+            state = ff.if_check(state, board, best_move=best_move)
             state = ff.better_than_second(
                 state, evaluated_moves, depth=depth, min_diff=10
             )
@@ -79,12 +80,14 @@ class Solver:
             state = ff.still_the_best_move(
                 state, evaluated_moves, depth=depth + 2, best_move=best_move
             )
+            state = ff.if_material_gain(state, board, best_move)
 
             if state:  # then all conditions are met and the move is noteworthy
                 # print(f'Move found {best_move["pv"][0]}')
                 # node_output = self.get_output(headers, board, evaluated_moves)
                 # positions.extend(node_output)
                 pass
+
             board.push(move)
         return positions
 
@@ -93,7 +96,7 @@ def entrypoint(
     input_path="test_pgn.pgn",
     output_path="out.test",
     h="minimal",
-    cp=50,  # args should proably be palced with filters
+    cp=50,  # this arg should probably be placed with filters only
     d=10,
     cpu_cores=2,
     **kwargs
