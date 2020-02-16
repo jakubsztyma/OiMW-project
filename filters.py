@@ -51,15 +51,15 @@ def better_than_second(state, evaluated_moves, depth, min_diff):
         return False
 
 
-#   _____ _   _ _ _   _   _            _               _                              
-#  /  ___| | (_) | | | | | |          | |             | |                             
-#  \ `--.| |_ _| | | | |_| |__   ___  | |__   ___  ___| |_   _ __ ___   _____   _____ 
+#   _____ _   _ _ _   _   _            _               _
+#  /  ___| | (_) | | | | | |          | |             | |
+#  \ `--.| |_ _| | | | |_| |__   ___  | |__   ___  ___| |_   _ __ ___   _____   _____
 #   `--. \ __| | | | | __| '_ \ / _ \ | '_ \ / _ \/ __| __| | '_ ` _ \ / _ \ \ / / _ \
 #  /\__/ / |_| | | | | |_| | | |  __/ | |_) |  __/\__ \ |_  | | | | | | (_) \ V /  __/
 #  \____/ \__|_|_|_|  \__|_| |_|\___| |_.__/ \___||___/\__| |_| |_| |_|\___/ \_/ \___|
-#                                                                                                                                                                        
-# Test if the best move that is considered is still the best at the target depth. 
-# Can be used to check if the move is the best on multiple depths. 
+#
+# Test if the best move that is considered is still the best at the target depth.
+# Can be used to check if the move is the best on multiple depths.
 #
 # ARGS:
 # state -> False if any conditions proceeding this one was False
@@ -70,11 +70,12 @@ def better_than_second(state, evaluated_moves, depth, min_diff):
 
 
 def still_the_best_move(state, evaluated_moves, depth, best_move):
-    a = evaluated_moves[(depth-1)*2]['pv'][0]
+    a = evaluated_moves[(depth - 1) * 2]["pv"][0]
     b = best_move
-    if not state or evaluated_moves[(depth-1)*2]['pv'][0] != best_move:
+    if not state or evaluated_moves[(depth - 1) * 2]["pv"][0] != best_move:
         return False
     else:
         return True
+
 
 # text generated using: http://patorjk.com/software/taag/#p=display&v=2&c=bash&f=Doom
