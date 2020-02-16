@@ -66,6 +66,9 @@ class Solver:
             )
 
             depth = 5
+            if len(evaluated_moves) < depth * 2:
+                continue  # because the game is bound to end before achieving that depth?
+
             best_move = evaluated_moves[(depth - 1) * 2]["pv"][0]
             state = True
 

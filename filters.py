@@ -43,7 +43,7 @@ def not_a_starting_move(state, board, n_ignore):
 
 
 def better_than_second(state, evaluated_moves, depth, min_diff):
-    if not state:
+    if not state or len(evaluated_moves) < depth * 2:
         return False
     best_move = evaluated_moves[(depth - 1) * 2]["cp"]
     second_move = evaluated_moves[(depth - 1) * 2 + 1]["cp"]
@@ -73,7 +73,11 @@ def better_than_second(state, evaluated_moves, depth, min_diff):
 
 
 def still_the_best_move(state, evaluated_moves, depth, best_move):
-    if not state or evaluated_moves[(depth - 1) * 2]["pv"][0] != best_move:
+    if (
+        not state
+        or len(evaluated_moves) < depth * 2
+        or evaluated_moves[(depth - 1) * 2]["pv"][0] != best_move
+    ):
         return False
     else:
         return True
