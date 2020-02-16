@@ -39,6 +39,7 @@ class Solver:
     def get_output(self, headers, board, moves):
         # TODO format output accordingly to specification
         result = []
+
         for move in moves:
             uci_move = move["pv"][0]
             board.push(uci_move)
@@ -73,20 +74,20 @@ class Solver:
             state = True
 
             state = ff.not_a_starting_move(state, board, n_ignore=2)
-            state = ff.if_check(state, board, best_move=best_move)
+            state = ff.not_check(state, board, best_move=best_move)
             state = ff.better_than_second(
-                state, evaluated_moves, depth=depth, min_diff=10
+                state, evaluated_moves, depth=depth, min_diff=5
             )
-            state = ff.still_the_best_move(
-                state, evaluated_moves, depth=depth + 1, best_move=best_move
+            state = ff.wasnt_best_move(
+                state, evaluated_moves, depth=2, best_move=best_move
             )
-            state = ff.still_the_best_move(
-                state, evaluated_moves, depth=depth + 2, best_move=best_move
+            state = ff.wasnt_best_move(
+                state, evaluated_moves, depth=3, best_move=best_move
             )
-            state = ff.if_material_gain(state, board, best_move)
+            state = ff.better_material_gain(state, board, best_move)
 
             if state:  # then all conditions are met and the move is noteworthy
-                # print(f'Move found {best_move["pv"][0]}')
+                # print(f"Move found {best_move}")
                 # node_output = self.get_output(headers, board, evaluated_moves)
                 # positions.extend(node_output)
                 pass
@@ -102,7 +103,7 @@ def entrypoint(
     cp=50,  # this arg should probably be placed with filters only
     d=10,
     cpu_cores=2,
-    **kwargs
+    **kwargs,
 ):
 
     print(input_path, output_path, h, cp, d, cpu_cores)  # Show selected params

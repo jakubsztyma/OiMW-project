@@ -83,12 +83,41 @@ def still_the_best_move(state, evaluated_moves, depth, best_move):
         return True
 
 
-#   _____ __        _               _
-#  |_   _/ _|      | |             | |
-#    | || |_    ___| |__   ___  ___| | __
-#    | ||  _|  / __| '_ \ / _ \/ __| |/ /
-#   _| || |   | (__| | | |  __/ (__|   <
-#   \___/_|    \___|_| |_|\___|\___|_|\_\
+#   _    _                 _     _               _
+#  | |  | |               | |   | |             | |
+#  | |  | | __ _ ___ _ __ | |_  | |__   ___  ___| |_   _ __ ___   _____   _____
+#  | |/\| |/ _` / __| '_ \| __| | '_ \ / _ \/ __| __| | '_ ` _ \ / _ \ \ / / _ \
+#  \  /\  / (_| \__ \ | | | |_  | |_) |  __/\__ \ |_  | | | | | | (_) \ V /  __/
+#   \/  \/ \__,_|___/_| |_|\__| |_.__/ \___||___/\__| |_| |_| |_|\___/ \_/ \___|
+#
+# Test if the best move that is considered  wasn't the best at the target depth. Reversed "still_the_best_move".
+# Can be used to check if the move is only better after the evaluatiion reached deeper levels.
+#
+# ARGS:
+# state -> False if any conditions proceeding this one was False
+# evaluated_moves -> processed output of stockfish evaluation
+#
+# depth -> depth at which the moves are to be compared
+# best_move -> move that is considered the best and is checked against the best move og choosen depth
+
+
+def wasnt_best_move(state, evaluated_moves, depth, best_move):
+    if (
+        not state
+        or len(evaluated_moves) < depth * 2
+        or evaluated_moves[(depth - 1) * 2]["pv"][0] == best_move
+    ):
+        return False
+    else:
+        return True
+
+
+#   _   _       _          _               _
+#  | \ | |     | |        | |             | |
+#  |  \| | ___ | |_    ___| |__   ___  ___| | __
+#  | . ` |/ _ \| __|  / __| '_ \ / _ \/ __| |/ /
+#  | |\  | (_) | |_  | (__| | | |  __/ (__|   <
+#  \_| \_/\___/ \__|  \___|_| |_|\___|\___|_|\_\
 #
 # Test if the best move results in check or the current possition is a checkmate.
 #
@@ -99,7 +128,7 @@ def still_the_best_move(state, evaluated_moves, depth, best_move):
 # best_move -> move that is considered
 
 
-def if_check(state, board, best_move):
+def not_check(state, board, best_move):
     if (
         not state
         or board.is_checkmate()
@@ -110,15 +139,16 @@ def if_check(state, board, best_move):
         return True
 
 
-#   _____ __                   _            _       _               _
-#  |_   _/ _|                 | |          (_)     | |             (_)
-#    | || |_   _ __ ___   __ _| |_ ___ _ __ _  __ _| |   __ _  __ _ _ _ __
-#    | ||  _| | '_ ` _ \ / _` | __/ _ \ '__| |/ _` | |  / _` |/ _` | | '_ \
-#   _| || |   | | | | | | (_| | ||  __/ |  | | (_| | | | (_| | (_| | | | | |
-#   \___/_|   |_| |_| |_|\__,_|\__\___|_|  |_|\__,_|_|  \__, |\__,_|_|_| |_|
-#                                                        __/ |
-#                                                       |___/
+#   _   _                         _            _       _               _
+#  | \ | |                       | |          (_)     | |             (_)
+#  |  \| | ___    _ __ ___   __ _| |_ ___ _ __ _  __ _| |   __ _  __ _ _ _ __
+#  | . ` |/ _ \  | '_ ` _ \ / _` | __/ _ \ '__| |/ _` | |  / _` |/ _` | | '_ \
+#  | |\  | (_) | | | | | | | (_| | ||  __/ |  | | (_| | | | (_| | (_| | | | | |
+#  \_| \_/\___/  |_| |_| |_|\__,_|\__\___|_|  |_|\__,_|_|  \__, |\__,_|_|_| |_|
+#                                                           __/ |
+#                                                          |___/
 # Check if move results in material gain.
+# Incompatible with "no_better_gain"
 #
 # ARGS:
 # state -> False if any conditions proceeding this one was False
@@ -127,12 +157,51 @@ def if_check(state, board, best_move):
 # best_move -> move that is considered
 
 
-def if_material_gain(state, board, best_move):
+def no_material_gain(state, board, best_move):
     if not state:
         return False
     target = Move.from_uci(best_move).to_square
     piece_at_target = board.piece_at(target)
     if piece_at_target is not None:
+        return False
+    else:
+        return True
+
+
+#  ______      _   _                              _            _       _               _
+#  | ___ \    | | | |                            | |          (_)     | |             (_)
+#  | |_/ / ___| |_| |_ ___ _ __   _ __ ___   __ _| |_ ___ _ __ _  __ _| |   __ _  __ _ _ _ __
+#  | ___ \/ _ \ __| __/ _ \ '__| | '_ ` _ \ / _` | __/ _ \ '__| |/ _` | |  / _` |/ _` | | '_ \
+#  | |_/ /  __/ |_| ||  __/ |    | | | | | | (_| | ||  __/ |  | | (_| | | | (_| | (_| | | | | |
+#  \____/ \___|\__|\__\___|_|    |_| |_| |_|\__,_|\__\___|_|  |_|\__,_|_|  \__, |\__,_|_|_| |_|
+#                                                                           __/ |
+#                                                                          |___/
+# Check if player is able to take better pieces.
+# Incompatible with "no_material_gain".
+#
+# ARGS:
+# state -> False if any conditions proceeding this one was False
+# board -> current board state
+#
+# best_move -> move that is considered
+
+
+def better_material_gain(state, board, best_move):
+    if not state:
+        return False
+
+    target = Move.from_uci(best_move).to_square
+    piece_type_moving = Move.from_uci(best_move).from_square
+    piece_at_target = board.piece_at(target)
+    if piece_at_target is None:
+        return True
+
+    best_move_value = piece_at_target.piece_type
+    best_legal_value = max(
+        [board.piece_type_at(move.to_square) or 0 for move in board.legal_moves]
+    )
+
+    if best_legal_value <= best_move_value:
         return False
     else:
         return True
