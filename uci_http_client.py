@@ -2,10 +2,10 @@ import json
 import requests
 import websocket
 
-try:
-    import thread
-except ImportError:
-    import _thread as thread
+#try:
+#    import thread
+#except ImportError:
+#    import _thread as thread
 
 
 def validate_response(response_data, response):
@@ -71,7 +71,7 @@ class UCIHttpClient:
         payload = {'login': self.username, 'password': self.password}
         r = requests.post(self.uri + 'user/login', data=json.dumps(payload), headers=self.get_default_headers())
         response = r.json()
-
+        
         validate_response(response, r)
 
         self.token = response['token']
@@ -109,6 +109,7 @@ class UCIHttpClient:
         self.socket.send(f'setoption name Threads value {cores}')
         self.socket.send('ucinewgame')
         self.socket.send(f'position fen {board}')
+        self.socket.send(f'setoption name MultiPV value 2')
         self.socket.send(f'go depth {depth}')
 
         lines = []

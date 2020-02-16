@@ -1,27 +1,26 @@
 from time import time
 
 import fire
+import filters as ff
 from chess import engine as chess_engine, pgn
 
-# 145
-# 93
 from uci_http_client import UCIHttpClient
 
-STOCKFISH_PATH = 'stockfish-10/Linux/stockfish_10_x64'
 
 
 class Solver:
     CONCISE_HEADERS = {'White', 'Black', 'Site', 'Date'}
 
-    def __init__(self, h, cp, d, n, e, **kwargs):
+    def __init__(self, h, cp, d, cpu_cores, **kwargs):
         self.h = h
-        self.n = n
+        self.cpu_cores = cpu_cores
         self.cp = cp
         self.limit = chess_engine.Limit(depth=d)
         self.engine = UCIHttpClient()
 
     def __del__(self):
-        self.engine.quit()
+        pass
+        # self.engine.quit()
 
     def get_desired_headers(self, game_headers):
         if self.h == 'minimal':
@@ -59,29 +58,29 @@ class Solver:
         headers = self.get_desired_headers(game.headers)
 
         for move in game.mainline_moves():
-            evaluated_moves = self.engine.analyse(board.fen(), self.limit, cores=self.n)
-            #best_move, second_best_move = evaluated_moves[:2]
-            #if self.meets_conditions(best_move, second_best_move):
-                # print(f'Move found {best_move["pv"][0]}')
-            #    node_output = self.get_output(headers, board, evaluated_moves)
-            #    positions.extend(node_output)
-            #board.push(move)
+            evaluated_moves = self.engine.analyse(board.fen(), self.limit, cores=self.cpu_cores)
+            #ff.not_a_starting_move(game, move, evaluated_moves)
+            best_move, second_best_move = evaluated_moves[:2]
+            if self.meets_conditions(best_move, second_best_move):
+                print(f'Move found {best_move["pv"][0]}')
+                node_output = self.get_output(headers, board, evaluated_moves)
+                positions.extend(node_output)
+            board.push(move)
         return positions
 
 
 def entrypoint(
-        input_path,
-        output_path,
+        input_path = "test_pgn.pgn",
+        output_path = "out.test",
         h='minimal',
         cp=50,
         d=10,
-        n=2,
-        e=STOCKFISH_PATH,
+        cpu_cores=2,
         **kwargs
 ):
 
-    print(input_path, output_path, h, cp, d, n, e)  # Show selected params
-    solver = Solver(h, cp, d, n, e, **kwargs)
+    print(input_path, output_path, h, cp, d, cpu_cores)  # Show selected params
+    solver = Solver(h, cp, d, cpu_cores, **kwargs)
 
     with open(input_path, 'r') as input_, open(output_path, 'w') as output:
         game = pgn.read_game(input_)

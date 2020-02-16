@@ -11,6 +11,9 @@ pytest-mock = "*"
 python-chess = "*"
 fire = "*"
 pytest = "*"
+requests = "*"
+websocket-client = "*"
+websockets = "*"
 
 [requires]
 python_version = "3.6"
