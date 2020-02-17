@@ -117,11 +117,11 @@ class UCIHttpClient:
         self.socket = websocket.WebSocket(header=self.get_default_headers())
         self.socket.connect(self.socket_uri, header=self.get_default_headers())
 
-    def analyse(self, board, depth, cores):
+    def analyse(self, board, depth, cores, levels=2):
         self.socket.send(f"setoption name Threads value {cores}")
         self.socket.send("ucinewgame")
         self.socket.send(f"position fen {board}")
-        self.socket.send(f"setoption name MultiPV value 2")
+        self.socket.send(f"setoption name MultiPV value {levels}")
         self.socket.send(f"go depth {depth}")
 
         lines = []
