@@ -36,25 +36,15 @@ class Solver:
         else:
             raise Exception("Invalid h parameter")
 
-    def get_output(self, headers, board, moves):
-        # TODO format output accordingly to specification
-        result = []
+    def get_output(self, headers, board, real_move, best_move, second_best):
+        
+        board_fen = board.fen()
+        board_num = board.fullmove_number
+        best_move_data = (board_num, best_move["pv"][0], best_move["cp"], real_move == best_move["pv"][0])
+        second_move_data = (board_num, second_best["pv"][0], second_best["cp"], real_move == second_best["pv"][0])
 
-        for move in moves:
-            uci_move = move["pv"][0]
-            board.push(uci_move)
-            output_headers = {"fen": board.fen(), **headers}
-            game = pgn.Game(headers=output_headers)
-            result.append(str(game))
-            board.pop()
-        return result
+        return (board_fen, best_move_data, [second_move_data])
 
-    def meets_conditions(self, best_move, second_best_move):
-        # TODO add other constraints
-        # Moves are sorted starting by the best
-        score1 = best_move["score"].white().score()
-        score2 = second_best_move["score"].white().score()
-        return score1 - score2 >= self.cp
 
     def handle_game(self, game):
         positions = []
@@ -87,9 +77,9 @@ class Solver:
             state = ff.better_material_gain(state, board, best_move)
 
             if state:  # then all conditions are met and the move is noteworthy
-                # print(f"Move found {best_move}")
-                # node_output = self.get_output(headers, board, evaluated_moves)
-                # positions.extend(node_output)
+                print(f"Move found {best_move}")
+                node_output = self.get_output(headers, board, move.uci(), evaluated_moves[(depth - 1) * 2], evaluated_moves[(depth - 1) * 2 + 1])
+                positions.append(node_output)
                 pass
 
             board.push(move)
@@ -113,15 +103,16 @@ def entrypoint(
         game = pgn.read_game(input_)
         # while game:
         start = time()
-        for _ in range(5):
-            try:
-                positions = solver.handle_game(game)
-                for position in positions:
-                    output.write(position + "\n")
-            except Exception as ex:
-                print(ex)
-            finally:
-                game = pgn.read_game(input_)
+  
+        positions = solver.handle_game(game)
+        for p in positions:
+            output.write("\n[FEN '{}'] \n".format(p[0]))
+            to_print = "{}. {} {{{}}}{} ".format(p[1][0], p[1][1], p[1][2], "{{G}}" if p[1][3] else "")
+            for k in p[2]:
+                to_print += "({}. {} {{{}}}{}) ".format(k[0], k[1], k[2], "{{G}}" if k[3] else "")
+            print("[FEN {}]".format(p[0]) + "\n" + to_print)
+            output.write(to_print)
+
         print(time() - start)
 
 
