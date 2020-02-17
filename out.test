@@ -1,71 +1,61 @@
 
 [FEN 'rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2'] 
-2. g1f3 {73} (2. b1d2 {64}) 
-[FEN 'rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4'] 
-4. g1f3 {168}{{G}} (4. c4d5 {158}) 
+2. g1f3 {112} (2. c2c4 {79}{G}) 
 [FEN 'rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 1 4'] 
-4. c7c6 {-70} (4. f6e4 {-100}) 
+4. e7e6 {-115} (4. c8e6 {-123}) 
 [FEN 'rnbqk2r/ppp1ppbp/5np1/3p4/2PP3P/2N2N2/PP2PPP1/R1BQKB1R b KQkq - 0 5'] 
-5. c7c6 {-26}{{G}} (5. e8g8 {-40}) 
-[FEN 'rnbqk2r/pp2ppbp/5np1/3p4/3P3P/2N2N2/PP2PPP1/R1BQKB1R w KQkq - 0 7'] 
-7. c1g5 {69} (7. f3e5 {54}) 
+5. c7c6 {-26}{G} (5. e8g8 {-40}) 
 [FEN 'r1bq1rk1/pp2ppbp/2n2np1/3p4/3P1B1P/2N1PN2/PP3PP1/R2QKB1R w KQ - 1 9'] 
-9. d1b3 {6}{{G}} (9. f3e5 {-20}) 
-[FEN 'r1bq1rk1/pp2ppbp/5np1/n2p4/3P1B1P/Q1N1PN2/PP3PP1/R3KB1R b KQ - 4 10'] 
-10. f6h5 {164} (10. c8f5 {106}) 
+9. d1b3 {30}{G} (9. f3e5 {-29}) 
+[FEN 'r1bq1rk1/pp2ppbp/5np1/n2p4/3P1B1P/1QN1PN2/PP3PP1/R3KB1R w KQ - 3 10'] 
+10. b3b5 {-1} (10. b3a4 {-40}) 
 [FEN 'r1bq1rk1/pp2ppbp/2n2np1/3p4/3P1B1P/Q1N1PN2/PP3PP1/R3KB1R w KQ - 5 11'] 
-11. a3b3 {25}{{G}} (11. f3e5 {7}) 
+11. b2b4 {46} (11. a3b3 {-29}{G}) 
+[FEN 'r1bq1rk1/pp2ppbp/5np1/n2p4/3P1B1P/1QN1PN2/PP3PP1/R3KB1R w KQ - 7 12'] 
+12. b3b5 {-1} (12. b3a4 {-40}) 
 [FEN 'r1bq1rk1/pp2ppbp/5np1/n2p4/3P1B1P/Q1N1PN2/PP3PP1/R3KB1R b KQ - 8 12'] 
-12. a5c4 {202} (12. f6h5 {163}) 
+12. f6h5 {161} (12. a7a6 {70}) 
 [FEN 'r1bq1rk1/pp2ppbp/2n2np1/3p4/3P1B1P/Q1N1PN2/PP3PP1/R3KB1R w KQ - 9 13'] 
-13. b2b4 {29} (13. a3b3 {15}) 
-[FEN 'r2q1rk1/pp1bppbp/2n2np1/1B1p4/3P1B1P/Q1N1PN2/PP3PP1/R3K2R w KQ - 11 14'] 
-14. a3b3 {43} (14. f3e5 {21}) 
+13. b2b4 {46} (13. a3b3 {-29}) 
+[FEN 'r1bq1rk1/pp2ppbp/2n2np1/1B1p4/3P1B1P/Q1N1PN2/PP3PP1/R3K2R b KQ - 10 13'] 
+13. a7a5 {165} (13. c8g4 {147}) 
 [FEN 'r2q1rk1/pp1bppbp/2n2np1/1B1p4/3P1B1P/Q1N1PN2/PP3PP1/R4RK1 b - - 12 14'] 
-14. e7e6 {103} (14. a7a6 {56}{{G}}) 
+14. e7e6 {81} (14. d7g4 {65}) 
 [FEN 'r2q1rk1/1p1bppbp/p1n2np1/1B1p4/3P1B1P/Q1N1PN2/PP3PP1/R4RK1 w - - 0 15'] 
-15. b5e2 {111}{{G}} (15. b5d3 {-17}) 
+15. b5e2 {111}{G} (15. b5d3 {-17}) 
 [FEN 'r2q1rk1/3bppbp/p1n2np1/1p1p4/3P1B1P/Q1N1PN2/PP2BPP1/R4RK1 w - - 0 16'] 
-16. a3b3 {107}{{G}} (16. a3c5 {73}) 
-[FEN 'r2q1rk1/3bppbp/p4np1/np1p4/3P1B1P/1QN1PN2/PP2BPP1/R4RK1 w - - 2 17'] 
-17. b3b4 {71} (17. b3a3 {37}) 
+16. a3b3 {143}{G} (16. f3e5 {41}) 
+[FEN 'r2q1rk1/3bppbp/p4np1/np1p4/3P1B1P/2N1PN2/PP2BPP1/R2Q1RK1 b - - 3 17'] 
+17. a5c4 {85} (17. a8c8 {61}) 
 [FEN 'r2q1rk1/4ppbp/p4np1/np1p4/3P1BbP/2N1PN2/PP2BPP1/R2Q1RK1 w - - 4 18'] 
-18. f3e5 {85}{{G}} (18. a2a3 {72}) 
-[FEN 'r2q1rk1/4ppbp/p4np1/np1pN3/3P1BbP/2N1P3/PP2BPP1/R2Q1RK1 b - - 5 18'] 
-18. g4h5 {-25} (18. g4e2 {-41}{{G}}) 
+18. f3e5 {89}{G} (18. d1c2 {74}) 
 [FEN 'r2q1rk1/4ppbp/p4np1/np1pN3/3P1B1P/2N1P3/PP2QPP1/R4RK1 b - - 0 19'] 
-19. f6h5 {86} (19. a8c8 {-8}) 
-[FEN 'r2q1rk1/5pbp/p3pnp1/np1p4/3P1B1P/2NNP3/PP2QPP1/R4RK1 b - - 1 20'] 
-20. a5c6 {311} (20. f6h5 {68}) 
+19. f6h5 {75} (19. a8c8 {25}) 
 [FEN 'r4rk1/4qpbp/p3pnp1/np1p4/3P1B1P/2NNP3/PP2QPP1/R4RK1 w - - 2 21'] 
-21. a2a4 {-27} (21. e2c2 {-39}) 
+21. f4g5 {19} (21. e2e1 {-13}) 
 [FEN 'r4rk1/4qpbp/p3pnp1/np1p4/3P1B1P/2NNP3/PP2QPP1/2R2RK1 b - - 3 21'] 
-21. a5c4 {116} (21. f6h5 {104}) 
+21. f6h5 {104} (21. a5c4 {68}) 
 [FEN 'r1r3k1/4qpbp/p3pnp1/np1p4/3P1B1P/2NNP3/PP2QPP1/2R2RK1 w - - 4 22'] 
-22. e2f3 {31} (22. c3b1 {-6}) 
+22. e2e1 {6} (22. e2d2 {-1}) 
 [FEN 'r1r2qk1/5pbp/p3pnp1/np1p2B1/3P3P/2NNP3/PP2QPP1/2R2RK1 w - - 6 23'] 
-23. e2d1 {87} (23. c3b1 {70}) 
+23. e2f3 {162} (23. b2b4 {59}) 
 [FEN 'r1r2qk1/5pbp/p3pnp1/npNp2B1/3P3P/2N1P3/PP2QPP1/2R2RK1 b - - 7 23'] 
-23. a5c4 {28}{{G}} (23. b5b4 {-15}) 
-[FEN 'r1r2qk1/5pbp/p3pnp1/1pNp2B1/2nP3P/2N1P3/PPR1QPP1/5RK1 b - - 9 24'] 
-24. c4d6 {17} (24. f8e7 {1}) 
+23. a5c4 {51}{G} (23. b5b4 {-1}) 
+[FEN 'r1r1q1k1/5pbp/p3pnp1/1pNp2B1/2nP3P/2N1P3/PPR1QPP1/5RK1 w - - 10 25'] 
+25. c3b1 {25} (25. a2a4 {16}) 
 [FEN 'r1r1q1k1/5pbp/p3pnp1/1pNp2B1/2nP3P/2N1P3/PPR1QPP1/2R3K1 b - - 11 25'] 
-25. f6d7 {89}{{G}} (25. h7h6 {25}) 
+25. f6d7 {79}{G} (25. h7h6 {56}) 
 [FEN 'r1r1q1k1/3n1pbp/p3p1p1/1p1p2B1/2nP3P/2NNP3/PPR1QPP1/2R3K1 b - - 13 26'] 
-26. c4a5 {12} (26. c4d6 {-35}) 
+26. c4a5 {-12} (26. c4d6 {-43}) 
 [FEN 'r1r1q1k1/5pbp/pn2p1p1/1p1p2B1/2nP3P/2NNP3/PPR1QPP1/2R3K1 w - - 14 27'] 
-27. e2d1 {90} (27. g5f4 {75}{{G}}) 
-[FEN 'r1r1q1k1/5pbp/pn2p1p1/1p1p4/2nP1B1P/2NNP3/PPR1QPP1/2R3K1 b - - 15 27'] 
-27. e6e5 {-73} (27. e8e7 {-135}) 
+27. e2d1 {119} (27. g5f4 {75}{G}) 
 [FEN 'r1r1q1k1/5pb1/pn2p1pp/1p1p4/2nP1B1P/2NNP3/PPR1QPP1/2R3K1 w - - 0 28'] 
-28. c3d1 {192} (28. c3b1 {171}{{G}}) 
+28. c3d1 {192} (28. c3b1 {171}{G}) 
 [FEN 'r1r1q1k1/5pb1/pn2p1pp/1p1p4/2nP1B1P/3NP3/PPR1QPP1/1NR3K1 b - - 1 28'] 
-28. e8d8 {-39} (28. e6e5 {-64}) 
-[FEN 'r1r1qbk1/5p2/pn2p1pp/1p1p4/2nP1B1P/3NP3/PPR1QPP1/1NR3K1 w - - 2 29'] 
-29. b1c3 {198} (29. b2b3 {169}{{G}}) 
-[FEN 'r1r1qbk1/5p2/pn1np1pp/1p1p4/3P1B1P/1P1NP3/P1R1QPP1/1NR3K1 w - - 1 30'] 
-30. b1d2 {163}{{G}} (30. c2c7 {137}) 
+28. e6e5 {-64} (28. b5b4 {-88}) 
+[FEN '2r1qbk1/5p2/pn1np1pp/1p1p4/3P1B1P/1P1NP3/P1RN1PP1/3Q2K1 b - - 2 32'] 
+32. e8d8 {-49}{G} (32. c8c2 {-54}) 
 [FEN '2rq1bk1/5p2/pn1np1pp/1p1p4/3P1B1P/1P1NP3/P1RN1PP1/3Q2K1 w - - 3 33'] 
-33. f4e5 {78} (33. f4d6 {70}{{G}}) 
+33. f4e5 {78} (33. f4d6 {70}{G}) 
 [FEN '2rq2k1/5p2/pn1bp1pp/1p1p4/3P3P/1P1NPN2/P1R2PP1/3Q2K1 b - - 1 34'] 
-34. b6d7 {0} (34. c8c2 {-12}) 
+34. b6d7 {6} (34. c8c2 {-15}) 

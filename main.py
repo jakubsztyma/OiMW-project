@@ -107,9 +107,9 @@ def entrypoint(
         positions = solver.handle_game(game)
         for p in positions:
             output.write("\n[FEN '{}'] \n".format(p[0]))
-            to_print = "{}. {} {{{}}}{} ".format(p[1][0], p[1][1], p[1][2], "{{G}}" if p[1][3] else "")
+            to_print = "{}. {} {{{}}}{} ".format(p[1][0], p[1][1], p[1][2], "{G}" if p[1][3] else "")
             for k in p[2]:
-                to_print += "({}. {} {{{}}}{}) ".format(k[0], k[1], k[2], "{{G}}" if k[3] else "")
+                to_print += "({}. {} {{{}}}{}) ".format(k[0], k[1], k[2], "{G}" if k[3] else "")
             print("[FEN {}]".format(p[0]) + "\n" + to_print)
             output.write(to_print)
 
