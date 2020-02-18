@@ -16,7 +16,7 @@ class Solver:
         self.cp = cp
         self.maxdepth = d
         self.alternatives = alt
-        self.limit = chess_engine.Limit(depth=d)
+        self.limit = chess_engine.Limit(depth=d) # not to be used
         self.engine = UCIHttpClient()
 
     def __del__(self):
@@ -45,7 +45,7 @@ class Solver:
         best_move_data = (board_num, best_move["pv"][0], best_move["cp"], real_move == best_move["pv"][0])
 
         evaluated_moves2 = self.engine.analyse(
-                board.fen(), self.limit, cores=self.cpu_cores, levels=self.alternatives
+                board.fen(), self.maxdepth, cores=self.cpu_cores, levels=self.alternatives
             )
         second_best_moves = [evaluated_moves2[(self.maxdepth - 1) * self.alternatives + 1 + i] for i in range(self.alternatives-1)]
         second_best_moves = [(board_num, second_best["pv"][0], second_best["cp"], real_move == second_best["pv"][0]) for second_best in second_best_moves]
@@ -60,7 +60,7 @@ class Solver:
 
         for move in game.mainline_moves():
             evaluated_moves = self.engine.analyse(
-                board.fen(), self.limit, cores=self.cpu_cores
+                board.fen(), self.maxdepth, cores=self.cpu_cores
             )
 
             depth = self.maxdepth
@@ -98,9 +98,9 @@ def entrypoint(
     input_path="test_pgn.pgn",
     output_path="out.test",
     h="minimal",
-    cp=50,  # this arg should probably be placed with filters only
-    d=5,
-    alt = 3, 
+    cp=20,  
+    d=20,
+    alt = 4, 
     cpu_cores=2,
     **kwargs,
 ):
@@ -114,14 +114,19 @@ def entrypoint(
         start = time()
   
         positions = solver.handle_game(game)
-        for p in positions:
-            output.write("\n[FEN '{}'] \n".format(p[0]))
-            to_print = "{}. {} {{{}}}{} ".format(p[1][0], p[1][1], p[1][2], "{G}" if p[1][3] else "")
-            for k in p[2]:
-                to_print += "({}. {} {{{}}}{}) ".format(k[0], k[1], k[2], "{G}" if k[3] else "")
-            print("[FEN {}]".format(p[0]) + "\n" + to_print)
-            output.write(to_print)
-
+        for _ in range(5): #does nothing atm?
+            try:
+                for p in positions:
+                    output.write("\n[FEN '{}'] \n".format(p[0]))
+                    to_print = "{}. {} {{{}}}{} ".format(p[1][0], p[1][1], p[1][2], "{G}" if p[1][3] else "")
+                    for k in p[2]:
+                        to_print += "({}. {} {{{}}}{}) ".format(k[0], k[1], k[2], "{G}" if k[3] else "")
+                    print("[FEN {}]".format(p[0]) + "\n" + to_print)
+                    output.write(to_print)
+            except Exception as ex:
+                print(ex)
+            finally:
+                game = pgn.read_game(input_)
         print(time() - start)
 
 
