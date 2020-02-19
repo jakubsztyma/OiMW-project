@@ -38,7 +38,7 @@ def test_meets_conditions(solver, score1, score2, exprected_result):
 
 
 def test_handle_game(solver):
-    with open('test_pgn.pgn') as pgn_file:
+    with open('test_big_pgn.pgn') as pgn_file:
         game = pgn.read_game(pgn_file)
 
     result = solver.handle_game(game)
