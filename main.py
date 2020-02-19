@@ -65,26 +65,28 @@ class Solver:
 
         for move in game.mainline_moves():
             print(move)
-            evaluated_moves = self.engine.analyse(board.fen(), self.depth)
+            all_evaluated = self.engine.analyse(board.fen(), self.depth)
 
             depth = self.depth
-            if depth not in evaluated_moves:
+            if depth not in all_evaluated:
                 print("moves for selected depth were not generated")
                 board.push(move)
                 continue
 
-            evaluated_deep = evaluated_moves[depth]
-            best_move = evaluated_deep[0]["pv"]
+            evaluated_moves = all_evaluated[depth]
+            best_move = evaluated_moves[0]["pv"]
 
             if all([
+                ff.not_only_move(evaluated_moves),
+                ff.not_losing(evaluated_moves),
                 ff.not_a_starting_move(board, n_ignore=8),
                 ff.not_check(board, best_move=best_move),
-                ff.better_than_second(evaluated_deep, min_diff=self.cp),
-                ff.not_strong_in_given_depth(evaluated_moves, depth=4, best_move=best_move),
+                ff.better_than_second(evaluated_moves, min_diff=self.cp),
+                ff.not_strong_in_given_depth(all_evaluated, depth=4, best_move=best_move),
                 ff.is_not_best_material_gain(board, best_move)
             ]):
                 print(f"Move found {best_move}")
-                node_output = self.get_output(headers, board, move.uci(), evaluated_deep)
+                node_output = self.get_output(headers, board, move.uci(), evaluated_moves)
                 positions.append(node_output)
 
             board.push(move)

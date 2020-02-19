@@ -1,5 +1,26 @@
+from copy import deepcopy
+
 from chess import Move
 
+# Test if the move is not the only valid move
+#
+# ARGS:
+# evaluated_moves -> processed output of stockfish evaluation
+
+def not_only_move(evaluated_moves):
+    if len(evaluated_moves) < 2:
+        return False
+    return True
+
+
+# Test if the move is not losing
+#
+# ARGS:
+# evaluated_moves -> processed output of stockfish evaluation
+def not_losing(evaluated_moves):
+    if "cp" not in evaluated_moves[0]:
+        return True
+    return int(evaluated_moves[0]["cp"]) > -200
 
 #   _   _       _                 _             _   _
 #  | \ | |     | |               | |           | | (_)
@@ -35,12 +56,15 @@ def not_a_starting_move(board, n_ignore):
 
 
 def better_than_second(evaluated_moves, min_diff):
-    if len(evaluated_moves) == 1:
+    if len(evaluated_moves) < 2:
+        return False
+    if "cp" not in evaluated_moves[0] or "cp" not in evaluated_moves[1]:
         return True
     best_move = evaluated_moves[0]["cp"]
     second_move = evaluated_moves[1]["cp"]
 
     return int(best_move) >= int(second_move) + min_diff
+
 
 #               _         _                             _                _                      _            _   _
 #              | |       | |                           (_)              (_)                    | |          | | | |
@@ -59,13 +83,15 @@ def better_than_second(evaluated_moves, min_diff):
 # best_move -> move that is considered the best and is checked against the best move of chosen depth
 
 
-def not_strong_in_given_depth(evaluated_moves, depth, best_move):
-    if depth not in evaluated_moves or len(evaluated_moves[depth]) == 1:
+def not_strong_in_given_depth(all_evaluated, depth, best_move):
+    if depth not in all_evaluated or len(all_evaluated[depth]) == 1:
         return True
-    best_at_depth = evaluated_moves[depth]
+    best_at_depth = all_evaluated[depth]
     if best_at_depth[0]["pv"] != best_move:
         return True
     CP_THRESHOLD = 20
+    if "cp" not in best_at_depth[0] or "cp" not in best_at_depth[1]:
+        return True
     return int(best_at_depth[0]["cp"]) < CP_THRESHOLD + int(best_at_depth[1]["cp"])
 
 
@@ -84,10 +110,9 @@ def not_strong_in_given_depth(evaluated_moves, depth, best_move):
 
 
 def not_check(board, best_move):
-    return not (
-            board.is_checkmate()
-            or board.is_into_check(Move.from_uci(best_move))
-    )
+    board_copy = deepcopy(board)
+    board_copy.push(Move.from_uci(best_move))
+    return not board_copy.is_check()
 
 
 # Check if there are moves that capture pieces of at least the same strength.
@@ -110,13 +135,15 @@ def is_not_best_material_gain(board, best_move):
     if piece_at_target is None:
         return True
 
+    if len(list(board.legal_moves)) == 1:
+        return True
+
     move_value = piece_at_target.piece_type
     best_legal_value = max([
         board.piece_type_at(move.to_square) or 0
         for move in board.legal_moves
         if move != best_move
     ])
-
     return best_legal_value >= move_value
 
 # text generated using: http://patorjk.com/software/taag/#p=display&v=2&c=bash&f=Doom
