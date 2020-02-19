@@ -2,22 +2,29 @@ from time import time
 
 import fire
 import filters as ff
-from chess import engine as chess_engine, pgn
+from chess import engine as chess_engine, pgn, Move
 
 from uci_http_client import UCIHttpClient
+
+#python3 -m pipenv run main.py --depth=4
 
 
 class Solver:
     CONCISE_HEADERS = {"White", "Black", "Site", "Date"}
 
-    def __init__(self, h, cp, d, alt, cpu_cores, **kwargs):
+    def __init__(self, h, cp, depth, alt, cpu_cores, **kwargs):
         self.h = h
-        self.cpu_cores = cpu_cores
+        # self.cpu_cores = cpu_cores
         self.cp = cp
-        self.maxdepth = d
+        self.depth = depth
+        # self.limit = chess_engine.Limit(depth=depth)
         self.alternatives = alt
+<<<<<<< HEAD
         self.limit = chess_engine.Limit(depth=d) # not to be used
         self.engine = UCIHttpClient()
+=======
+        self.engine = UCIHttpClient(alt, cpu_cores)
+>>>>>>> f096c9d16c1b9a8c7da5e361157ab40ed5dbd91e
 
     def __del__(self):
         pass
@@ -38,20 +45,31 @@ class Solver:
         else:
             raise Exception("Invalid h parameter")
 
-    def get_output(self, headers, board, real_move, best_move):
-        
-        board_fen = board.fen()
-        board_num = board.fullmove_number
-        best_move_data = (board_num, best_move["pv"][0], best_move["cp"], real_move == best_move["pv"][0])
+    def get_comment(self, move, real_move_uci):
+        cp = move.get("cp", "")
+        was_played = move["pv"] == real_move_uci
+        if was_played:
+            return f"{cp} G"
+        return cp
 
+<<<<<<< HEAD
         evaluated_moves2 = self.engine.analyse(
                 board.fen(), self.maxdepth, cores=self.cpu_cores, levels=self.alternatives
             )
         second_best_moves = [evaluated_moves2[(self.maxdepth - 1) * self.alternatives + 1 + i] for i in range(self.alternatives-1)]
         second_best_moves = [(board_num, second_best["pv"][0], second_best["cp"], real_move == second_best["pv"][0]) for second_best in second_best_moves]
+=======
+    def get_output(self, headers, board, real_move_uci, moves):
+        output_headers = {"FEN": board.fen(), **headers}
+        game = pgn.Game(headers=output_headers)
+>>>>>>> f096c9d16c1b9a8c7da5e361157ab40ed5dbd91e
 
-        return (board_fen, best_move_data, second_best_moves)
+        best_move = moves[0]
+        game.add_main_variation(Move.from_uci(best_move["pv"]), comment=self.get_comment(best_move, real_move_uci))
 
+        for move in moves[1:]:
+            game.add_variation(Move.from_uci(move["pv"]), comment=self.get_comment(move, real_move_uci))
+        return str(game)
 
     def handle_game(self, game):
         positions = []
@@ -59,42 +77,43 @@ class Solver:
         headers = self.get_desired_headers(game.headers)
 
         for move in game.mainline_moves():
+<<<<<<< HEAD
             evaluated_moves = self.engine.analyse(
                 board.fen(), self.maxdepth, cores=self.cpu_cores
             )
+=======
+            print(move)
+            all_evaluated = self.engine.analyse(board.fen(), self.depth)
+>>>>>>> f096c9d16c1b9a8c7da5e361157ab40ed5dbd91e
 
-            depth = self.maxdepth
-            if len(evaluated_moves) < depth * 2:
+            depth = self.depth
+            if depth not in all_evaluated:
+                print("moves for selected depth were not generated")
                 board.push(move)
-                continue  #moves for selected depth were not generated
+                continue
 
-            best_move = evaluated_moves[(depth - 1) * 2]["pv"][0]
-            state = True
+            evaluated_moves = all_evaluated[depth]
+            best_move = evaluated_moves[0]["pv"]
 
-            state = ff.not_a_starting_move(state, board, n_ignore=8) 
-            state = ff.not_check(state, board, best_move=best_move)
-            state = ff.better_than_second(
-                state, evaluated_moves, depth=depth, min_diff=self.cp
-            )
-            state = ff.wasnt_best_move(
-                state, evaluated_moves, depth=2, best_move=best_move
-            )
-            state = ff.wasnt_best_move(
-                state, evaluated_moves, depth=3, best_move=best_move
-            )
-            state = ff.better_material_gain(state, board, best_move)
-
-            if state:  # then all conditions are met and the move is noteworthy
+            if all([
+                ff.not_only_move(evaluated_moves),
+                ff.not_losing(evaluated_moves),
+                ff.not_a_starting_move(board, n_ignore=8),
+                ff.not_check(board, best_move=best_move),
+                ff.better_than_second(evaluated_moves, min_diff=self.cp),
+                ff.not_strong_in_given_depth(all_evaluated, depth=4, best_move=best_move),
+                ff.is_not_best_material_gain(board, best_move)
+            ]):
                 print(f"Move found {best_move}")
-                node_output = self.get_output(headers, board, move.uci(), evaluated_moves[(depth - 1) * 2])
+                node_output = self.get_output(headers, board, move.uci(), evaluated_moves)
                 positions.append(node_output)
-                pass
 
             board.push(move)
         return positions
 
 
 def entrypoint(
+<<<<<<< HEAD
     input_path="test_pgn.pgn",
     output_path="out.test",
     h="minimal",
@@ -103,15 +122,23 @@ def entrypoint(
     alt = 4, 
     cpu_cores=2,
     **kwargs,
+=======
+        input_path="test_pgn.pgn",
+        output_path="out.test",
+        h="minimal",
+        cp=50,  # this arg should probably be placed with filters only
+        depth=7,
+        alt=3,
+        cpu_cores=2,
+        **kwargs
+>>>>>>> f096c9d16c1b9a8c7da5e361157ab40ed5dbd91e
 ):
-
-    print(input_path, output_path, h, cp, d, alt,  cpu_cores)  # Show selected params
-    solver = Solver(h, cp, d, alt, cpu_cores, **kwargs)
+    print(input_path, output_path, h, cp, depth, alt, cpu_cores)  # Show selected params
+    solver = Solver(h, cp, depth, alt, cpu_cores, **kwargs)
 
     with open(input_path, "r") as input_, open(output_path, "w") as output:
-        game = pgn.read_game(input_)
-
         start = time()
+<<<<<<< HEAD
   
         positions = solver.handle_game(game)
         for _ in range(5): #does nothing atm?
@@ -127,6 +154,17 @@ def entrypoint(
                 print(ex)
             finally:
                 game = pgn.read_game(input_)
+=======
+
+        while True:
+            game = pgn.read_game(input_)
+            if game is None:
+                break
+            for p in solver.handle_game(game):
+                output.write(str(p))
+                output.write("\n\n")
+
+>>>>>>> f096c9d16c1b9a8c7da5e361157ab40ed5dbd91e
         print(time() - start)
 
 
