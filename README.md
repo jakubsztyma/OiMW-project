@@ -14,6 +14,21 @@ pipenv installd
 pipenv shell
 ```
 
+### UCI client configuration
+
+File *uci_server_config.json* contains configuration of UCI client. 
+It can be changed to facilitate connecting to remote UCI server.
+
+Example configuration file:
+```json
+{
+  "login": "test",
+  "password": "111111",
+  "uci_server_url": "http://localhost:8080/",
+  "uci_server_socket_url": "ws://localhost:8080/ws_engine"
+}
+```
+
 ### How to run program (example)
 
 ```bash
