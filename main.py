@@ -41,8 +41,8 @@ class Solver:
             raise Exception("Invalid h parameter")
 
     def get_comment(self, move, real_move_uci):
-        cp = move["cp"]
-        was_played = move["cp"] == real_move_uci
+        cp = move.get("cp", "")
+        was_played = move["pv"] == real_move_uci
         if was_played:
             return f"{cp} G"
         return cp

@@ -2,6 +2,7 @@ from copy import deepcopy
 
 from chess import Move
 
+
 # Test if the move is not the only valid move
 #
 # ARGS:
@@ -21,6 +22,7 @@ def not_losing(evaluated_moves):
     if "cp" not in evaluated_moves[0]:
         return True
     return int(evaluated_moves[0]["cp"]) > -200
+
 
 #   _   _       _                 _             _   _
 #  | \ | |     | |               | |           | | (_)
