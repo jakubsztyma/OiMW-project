@@ -42,6 +42,8 @@ def process_response_lines(lines):
 
     info_lines = [line for line in lines if "info depth" in line]
     for info_line in info_lines:
+        if "multipv" not in info_line:
+            continue
         info_dict = {}
         splitted_line = info_line.split(" ")
         for index, word in enumerate(splitted_line):

@@ -98,7 +98,7 @@ def entrypoint(
         output_path="out.test",
         h="minimal",
         cp=50,  
-        depth=10,
+        depth=20,
         alt=3,
         cpu_cores=2,
         **kwargs
