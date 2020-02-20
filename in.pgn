@@ -1,0 +1,986 @@
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.1"]
+[White "Swiercz,D"]
+[Black "Nepomniachtchi,I"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2655"]
+[BlackElo "2771"]
+[ECO "D90"]
+[Opening "Gruenfeld"]
+[Variation "Three knights variation"]
+[WhiteTeam "United States of America"]
+[BlackTeam "Russia"]
+[WhiteFideId "1126881"]
+[BlackFideId "4168119"]
+[EventDate "2019.03.05"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. h4 c6 6. cxd5 cxd5 7. Bf4 O-O 8. e3
+Nc6 9. Qb3 Na5 10. Qa3 Nc6 11. Qb3 Na5 12. Qa3 Nc6 13. Bb5 Bd7 14. O-O a6 15.
+Be2 b5 16. Qb3 Na5 17. Qd1 Bg4 18. Ne5 Bxe2 19. Qxe2 e6 20. Nd3 Qe7 21. Rac1
+Rfc8 22. Bg5 Qf8 23. Nc5 Nc4 24. Rc2 Qe8 25. Rfc1 Nd7 26. Nd3 Ndb6 27. Bf4 h6
+28. Nb1 Bf8 29. b3 Nd6 30. Nd2 Rxc2 31. Rxc2 Rc8 32. Qd1 Qd8 33. Bxd6 Bxd6 34.
+Nf3 Rc7 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.1"]
+[White "Grischuk,A"]
+[Black "Sevian,Samuel"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2771"]
+[BlackElo "2642"]
+[ECO "D30"]
+[Opening "QGD"]
+[Variation "Capablanca-Duras variation"]
+[WhiteTeam "Russia"]
+[BlackTeam "United States of America"]
+[WhiteFideId "4126025"]
+[BlackFideId "2040506"]
+[EventDate "2019.03.05"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Bg5 h6 5. Bxf6 Qxf6 6. e3 Nd7 7. Nc3 c6 8. Bd3
+g6 9. O-O Bg7 10. Re1 dxc4 11. Bxc4 O-O 12. e4 e5 13. d5 Nb6 14. Bb3 Rd8 15. h3
+Bf8 16. Qe2 Bd7 17. Red1 Rac8 18. a4 a5 19. dxc6 Bxc6 20. Qe3 Nd7 21. Nd5 Bxd5
+22. Rxd5 Nc5 23. Bc4 Rxd5 24. Bxd5 b6 25. Rc1 Kg7 26. g3 Rc7 27. Kg2 Bd6 28. b3
+Na6 29. Rxc7 Bxc7 30. Qc3 Nc5 31. h4 Qd6 32. Qc4 Qe7 33. h5 Bd8 34. Qc3 Nd7 35.
+hxg6 fxg6 36. Bc6 Qc5 37. Qc4 Qxc4 38. bxc4 Nb8 39. Bb5 Kf6 40. Ne1 Bc7 41. Nd3
+g5 42. c5 bxc5 43. Nxc5 Bb6 44. Nd3 g4 45. Nb2 h5 46. Nc4 Bc7 47. Ne3 Kg5 48. f3
+gxf3+ 49. Kxf3 Bb6 50. Nc4 Bc7 51. Ne3 Bb6 52. Nc4 Bc7 53. Kg2 h4 54. gxh4+ Kxh4
+55. Kf3 Kg5 56. Ne3 Bb6 57. Nd5 Bc5 58. Ke2 Kg4 59. Nc7 Bg1 60. Ne6 Bb6 61. Kd3
+Kf3 62. Nf8 Bd8 63. Ne6 Bb6 64. Ng7 Ba7 65. Nf5 Bf2 66. Nd6 Be1 67. Ne8 Bb4 68.
+Ng7 Be1 69. Nf5 Bf2 70. Nd6 Be1 71. Nc4 Kf4 72. Nb6 Kf3 73. Nd5 Bh4 74. Ne3 Be1
+75. Nc2 Bf2 76. Na3 Be1 77. Nc4 Kf4 78. Nd6 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.1"]
+[White "Lenderman,A"]
+[Black "Andreikin,D"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2637"]
+[BlackElo "2725"]
+[ECO "E17"]
+[Opening "Queen's Indian"]
+[Variation "old main line, 6.O-O"]
+[WhiteTeam "United States of America"]
+[BlackTeam "Russia"]
+[WhiteFideId "2021285"]
+[BlackFideId "4158814"]
+[EventDate "2019.03.05"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O O-O 7. Re1 c6 8. Nc3 d5
+9. Nd2 b5 10. cxb5 cxb5 11. Nxb5 Qb6 12. Nc3 Qxd4 13. e4 Na6 14. exd5 Nxd5 15.
+Nxd5 Bxd5 16. Nb3 Qxd1 17. Rxd1 Bxg2 18. Kxg2 Bf6 19. Rd7 Nb4 20. Nc5 Rfb8 21.
+Ne4 Nc2 22. Nxf6+ gxf6 23. Rb1 Na3 24. Ra1 Nc2 25. Rb1 Na3 26. Ra1 Nc2 27. Rb1
+Na3 28. Ra1 Nc2 29. Rb1 Na3 30. Ra1 Nc2 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.1"]
+[White "Artemiev,V"]
+[Black "Izoria,Z"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2736"]
+[BlackElo "2603"]
+[ECO "A15"]
+[Opening "English opening"]
+[WhiteTeam "Russia"]
+[BlackTeam "United States of America"]
+[WhiteFideId "24101605"]
+[BlackFideId "13601733"]
+[EventDate "2019.03.05"]
+
+1. Nf3 Nf6 2. c4 e6 3. Nc3 d5 4. e3 c5 5. d4 dxc4 6. Bxc4 a6 7. O-O b5 8. Bb3
+Bb7 9. e4 cxd4 10. Nxd4 Nc6 11. Nxc6 Qxd1 12. Rxd1 Bxc6 13. f3 Bc5+ 14. Kf1 Ke7
+15. Ne2 Rhd8 16. Bg5 Rxd1+ 17. Rxd1 Bd6 18. Rxd6 Kxd6 19. e5+ Kxe5 20. Bf4+ Kf5
+21. Bc2+ Ne4 22. fxe4+ Kf6 23. Kf2 e5 24. Bd2 Ke7 25. Bb4+ Ke8 26. Ba5 Bd7 27.
+Bb3 Rc8 28. Nc3 Rc6 29. Nd5 Rh6 30. Bc3 Kf8 31. h3 f5 32. exf5 Bxf5 33. Bxe5 a5
+34. Ke3 Rc6 35. Nc3 b4 36. Bd5 Rc8 37. Nb5 Rc1 38. Nd6 Bb1 39. Nb7 Re1+ 40. Kd4
+Re2 41. a4 Rxb2 42. Nxa5 Bc2 43. Nc4 Ra2 44. Bd6+ Ke8 45. Bxb4 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.2"]
+[White "Naiditsch,A"]
+[Black "Adhiban,Baskaran"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2710"]
+[BlackElo "2683"]
+[ECO "C69"]
+[Opening "Ruy Lopez"]
+[Variation "exchange variation, 5.O-O"]
+[WhiteTeam "Azerbaijan"]
+[BlackTeam "India"]
+[WhiteFideId "4650891"]
+[BlackFideId "5018471"]
+[EventDate "2019.03.05"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. O-O Qf6 6. d4 exd4 7. Bg5 Qd6 8.
+Nxd4 Bd7 9. Nc3 Ne7 10. Be3 c5 11. Nde2 Qxd1 12. Rfxd1 Ng6 13. Rd5 Bc6 14. Rh5
+O-O-O 15. Bxc5 Bxc5 16. Rxc5 Rd2 17. Rc1 Bxe4 18. Nxe4 Rxe2 19. Nd6+ Kb8 20. Nf5
+Nf4 21. Kf1 Rd2 22. Nxg7 Rg8 23. Rc4 Ne2 24. Re1 Rxg7 25. Rxe2 Rd1+ 26. Re1
+Rxe1+ 27. Kxe1 Rxg2 28. Rh4 Rg7 29. Ke2 Kc8 30. Kf3 Kd7 31. Rg4 Rg6 32. Rxg6
+fxg6 33. Kf4 Ke6 34. Kg5 Kf7 35. Kh6 Kg8 36. c4 a5 37. b3 Kh8 38. c5 Kg8 39. a3
+Kh8 40. b4 axb4 41. axb4 Kg8 42. f4 Kh8 43. b5 Kg8 44. h3 Kh8 45. f5 gxf5 46.
+Kg5 Kg7 47. Kxf5 Kf7 48. Ke5 Ke7 49. h4 b6 50. Kd5 bxc5 51. Kxc5 h5 52. Kc6 Kd8
+53. Kd5 Kc8 54. Kc6 Kb8 55. b6 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.2"]
+[White "Sasikiran,K"]
+[Black "Guseinov,G"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2678"]
+[BlackElo "2664"]
+[ECO "B36"]
+[Opening "Sicilian"]
+[Variation "accelerated fianchetto, Gurgenidze variation"]
+[WhiteTeam "India"]
+[BlackTeam "Azerbaijan"]
+[WhiteFideId "5004985"]
+[BlackFideId "13401378"]
+[EventDate "2019.03.05"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Nf6 6. Nc3 Nxd4 7. Qxd4 d6 8.
+Be2 Bg7 9. Be3 O-O 10. Qd2 a5 11. O-O a4 12. Rab1 Qa5 13. Rfc1 Be6 14. h3 Rfc8
+15. b3 axb3 16. axb3 Qb4 17. Qe1 Bd7 18. Bf3 Ra3 19. Bd2 Qb6 20. Qd1 h6 21. Be3
+Qb4 22. Bd2 Qb6 23. c5 dxc5 24. e5 Ne8 25. Be3 Be6 26. Nd5 Bxd5 27. Qxd5 e6 28.
+Qd7 Rd8 29. Qe7 Bf8 30. Bxc5 Bxe7 31. Bxb6 Rb8 32. b4 Ra6 33. Bc5 Bg5 34. Rc4 b6
+35. Bd4 Ra7 36. b5 Kf8 37. g3 Ng7 38. Rc6 Bd8 39. g4 Ne8 40. Be3 g5 41. Rd1 Ra5
+42. Be2 Ra4 43. Bc4 Bc7 44. Rc1 Bxe5 45. Bxb6 Kg7 46. Bc5 Nf6 47. Bf1 Nd5 48.
+Ra6 Rf4 49. Rc2 Nb4 50. Rc4 Rxb5 51. Rxf4 Nxa6 52. Bxb5 Nxc5 53. Rc4 Bd6 54. Rd4
+Be5 55. Rc4 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.2"]
+[White "Safarli,E"]
+[Black "Ganguly,S"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2662"]
+[BlackElo "2633"]
+[ECO "C67"]
+[Opening "Ruy Lopez"]
+[Variation "open Berlin defence, l'Hermet variation"]
+[WhiteTeam "Azerbaijan"]
+[BlackTeam "India"]
+[WhiteFideId "13402129"]
+[BlackFideId "5002150"]
+[EventDate "2019.03.05"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. dxe5 Nxb5 7. a4 Nbd4 8.
+Nxd4 d6 9. Nxc6 bxc6 10. Re1 dxe5 11. Rxe5+ Be6 12. Qf3 Qd7 13. Nc3 Bd6 14. Re2
+O-O 15. h3 Rfe8 16. Bf4 Rab8 17. Rae1 Rxb2 18. Ne4 Bxf4 19. Qxf4 Rbb8 20. Re3
+Bf5 21. Nc5 Rxe3 22. Qxe3 Qd6 23. Na6 Rf8 24. c3 h6 25. a5 Rd8 26. Nc5 Rb8 27.
+a6 Rb6 28. g4 Be6 29. c4 Kh8 30. Kg2 Rb2 31. Nxe6 Qxe6 32. Qxe6 fxe6 33. Rxe6
+Rb6 34. c5 Rxa6 35. f4 Ra1 36. Rxc6 a5 37. Rxc7 a4 38. Kg3 a3 39. Ra7 a2 40. Kh4
+Rc1 41. Rxa2 Rxc5 42. f5 Rc3 43. Rg2 g6 44. Ra2 gxf5 45. gxf5 Kg7 46. Kg4 Rc4+
+47. Kh5 Kf6 48. Ra5 Rb4 49. h4 Rc4 50. Rb5 Ra4 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.2"]
+[White "Sethuraman,S"]
+[Black "Abasov,N"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2637"]
+[BlackElo "2627"]
+[ECO "C42"]
+[Opening "Petrov"]
+[Variation "Paulsen attack"]
+[WhiteTeam "India"]
+[BlackTeam "Azerbaijan"]
+[WhiteFideId "5021596"]
+[BlackFideId "13402960"]
+[EventDate "2019.03.05"]
+
+1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nc4 Nxe4 5. Qe2 Qe7 6. Ne3 Be6 7. c4 Nc6 8.
+Nc3 Nf6 9. Ncd5 Qd8 10. b3 Be7 11. Bb2 O-O 12. g3 Nxd5 13. cxd5 Bf6 14. dxc6
+Bxb2 15. Rb1 Bd4 16. cxb7 Rb8 17. Bg2 Qd7 18. O-O d5 19. Qa6 c5 20. Nc2 Bf6 21.
+d4 cxd4 22. Rbd1 Rxb7 23. Nxd4 Rb6 24. Qd3 Bg4 25. Bf3 Bh3 26. Rfe1 g6 27. Ne2
+d4 28. Nf4 Bf5 29. Be4 Bxe4 30. Qxe4 Rd6 31. Nd3 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.3"]
+[White "Adams,Mi"]
+[Black "Amin,B"]
+[Result "0-1"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2708"]
+[BlackElo "2709"]
+[ECO "C95"]
+[Opening "Ruy Lopez"]
+[Variation "closed, Breyer, Borisenko variation"]
+[WhiteTeam "England"]
+[BlackTeam "Egypt"]
+[WhiteFideId "400041"]
+[BlackFideId "10601457"]
+[EventDate "2019.03.05"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3
+O-O 9. h3 Nb8 10. d4 Nbd7 11. Nbd2 Bb7 12. Bc2 Re8 13. Nf1 Bf8 14. Ng3 g6 15. b3
+a5 16. a4 b4 17. cxb4 axb4 18. Bb2 Bh6 19. dxe5 dxe5 20. Qe2 Qe7 21. Bd3 Bf4 22.
+Bb5 Red8 23. Rad1 Nc5 24. Bc4 Rd6 25. Nf1 Nfd7 26. Ne3 Bxe3 27. Qxe3 Nxe4 28.
+Rc1 c5 29. Qh6 g5 30. Qh5 Ndf6 31. Qxf7+ Qxf7 32. Bxf7+ Kxf7 33. Nxe5+ Kf8 34.
+Nc4 Rd3 35. f3 Nc3 36. Ne5 Rd5 37. Nc4 Re8 38. Rxe8+ Kxe8 39. Bxc3 bxc3 40. Rxc3
+Rd1+ 41. Kf2 Nd5 42. Rc2 Ba6 43. Nd6+ Ke7 44. Ne4 Nb4 45. Rc3 Rd5 46. Ke3 Nd3
+47. g3 h6 48. h4 gxh4 49. gxh4 Rf5 50. b4 cxb4 51. Rc6 Ra5 52. Rxh6 b3 53. Rb6
+b2 54. Nc3 Kd7 55. Kd4 Kc7 56. Rb3 Kc6 57. Nd1 Rd5+ 58. Kc3 Nc5 59. Rb4 Rxd1 60.
+Kxb2 Rd2+ 61. Kc3 Rd3+ 62. Kc2 Rxf3 63. a5 Kd5 64. Rg4 Bd3+ 65. Kb2 Bf5 66. Rg8
+Rb3+ 67. Kc1 0-1
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.3"]
+[White "Adly,A"]
+[Black "McShane,L"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2611"]
+[BlackElo "2661"]
+[ECO "D79"]
+[Opening "Neo-Gruenfeld, 6.O-O, main line"]
+[WhiteTeam "Egypt"]
+[BlackTeam "England"]
+[WhiteFideId "10601619"]
+[BlackFideId "404853"]
+[EventDate "2019.03.05"]
+
+1. Nf3 Nf6 2. g3 g6 3. Bg2 Bg7 4. c4 c6 5. O-O O-O 6. d4 d5 7. cxd5 cxd5 8. Nc3
+Ne4 9. Nd2 Nf6 10. Nb3 Bf5 11. Bg5 Ne4 12. Nxe4 Bxe4 13. f3 Bf5 14. e4 Be6 15.
+e5 f6 16. exf6 exf6 17. Be3 Nc6 18. Qd2 b6 19. Bh6 Qd7 20. Bxg7 Kxg7 21. Rfc1
+Rfc8 22. Bf1 Nd8 23. Ba6 Rxc1+ 24. Rxc1 Nf7 25. Qc3 Rd8 26. Qc6 Qe7 27. Re1 Rd6
+28. Qb5 Qd8 29. Re3 Bd7 30. Qe2 Rc6 31. Bd3 Rc7 32. Kg2 Bc8 33. Nd2 Qd7 34. Qd1
+Qd6 35. a3 Re7 36. Qe1 Rxe3 37. Qxe3 Qe6 38. Qxe6 Bxe6 39. Nb1 Nd6 40. Nc3 g5
+41. Kf2 h6 42. Nd1 Kf7 43. Ne3 Ke7 44. b4 Kd7 45. b5 Ne8 46. Ke1 Kd6 47. Kd2 Bd7
+48. Kc3 Ng7 49. a4 Be6 50. Kb4 Bd7 51. Kc3 Be6 52. f4 Bd7 53. f5 h5 54. h3 Be8
+55. Kd2 Bf7 56. Ke2 Ne8 57. Kf3 Ke7 58. Nc2 Nc7 59. Nb4 Be8 60. Ke3 Kd6 61. h4
+g4 62. Be2 Bf7 63. Kf4 Ne8 64. Bd1 Kd7 65. Bb3 Kd6 66. Ke3 Ng7 67. Bc2 Be8 68.
+Kf4 Bf7 69. Bd1 Be8 70. Bb3 Bf7 71. Nd3 Be8 72. Ne5 fxe5+ 73. dxe5+ Kc5 74. Kg5
+Nxf5 75. Kxf5 d4 76. Kf6 d3 77. Ke7 Bg6 78. e6 Kb4 79. Bd1 Kc3 80. Kf6 Be8 81.
+Ke7 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.3"]
+[White "Howell,D"]
+[Black "Fawzy,Adham"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "IM"]
+[WhiteElo "2693"]
+[BlackElo "2461"]
+[ECO "A04"]
+[Opening "Reti opening"]
+[WhiteTeam "England"]
+[BlackTeam "Egypt"]
+[WhiteFideId "410608"]
+[BlackFideId "10613129"]
+[EventDate "2019.03.05"]
+
+1. Nf3 c5 2. c4 Nc6 3. e3 e5 4. Nc3 d6 5. d4 cxd4 6. exd4 Bg4 7. Be2 f5 8. d5
+Bxf3 9. gxf3 Nce7 10. h4 g6 11. h5 Bh6 12. f4 Nf6 13. hxg6 Bxf4 14. Bxf4 exf4
+15. gxh7 Qb6 16. Qb3 Qd4 17. Nb5 Qb6 18. Qc3 Kf7 19. Bh5+ Nxh5 20. Rxh5 Raf8 21.
+O-O-O Qxf2 22. Nxd6+ Kg6 23. Rhh1 Qe3+ 24. Kc2 Qxc3+ 25. Kxc3 Kg7 26. Nxb7 Ng6
+27. d6 Ne5 28. d7 Nf7 29. c5 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.3"]
+[White "Hesham,A"]
+[Black "Jones,G"]
+[Result "0-1"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2450"]
+[BlackElo "2681"]
+[ECO "D70"]
+[Opening "Neo-Gruenfeld defence"]
+[WhiteTeam "Egypt"]
+[BlackTeam "England"]
+[WhiteFideId "10600183"]
+[BlackFideId "409561"]
+[EventDate "2019.03.05"]
+
+1. d4 Nf6 2. c4 g6 3. f3 d5 4. cxd5 Nxd5 5. e4 Nb6 6. Nc3 Bg7 7. Be3 O-O 8. Qd2
+Nc6 9. O-O-O Qd6 10. Nb5 Qd7 11. Bh6 Bxh6 12. Qxh6 a6 13. Nc3 Nxd4 14. f4 f6 15.
+Nf3 e5 16. fxe5 fxe5 17. Nxe5 Qd6 18. Nc4 Qc5 19. Nxb6 cxb6 20. Kb1 Be6 21. Qe3
+Rad8 22. Bd3 Nc6 23. Qg3 Qf2 24. Qg5 Nb4 25. Rhf1 Qc5 26. Rxf8+ Rxf8 27. Qg3 b5
+28. Nd5 Bxd5 29. exd5 Qxd5 30. b3 Nxd3 31. Rxd3 Qe4 32. Kb2 Qe2+ 33. Ka3 a5 34.
+Qd6 b4+ 35. Ka4 Qxa2+ 36. Kb5 Qxg2 37. Qe6+ Rf7 38. Kxa5 Qxh2 39. Rd7 Qf4 40.
+Rxb7 Qf5+ 41. Qxf5 Rxf5+ 42. Kxb4 h5 43. Kc4 h4 44. Re7 g5 45. b4 h3 46. Re2 g4
+47. b5 g3 48. b6 Rf7 49. Re8+ Kg7 0-1
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.4"]
+[White "Yu Yangyi"]
+[Black "Grandelius,N"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2761"]
+[BlackElo "2694"]
+[ECO "B90"]
+[Opening "Sicilian"]
+[Variation "Najdorf"]
+[WhiteTeam "China"]
+[BlackTeam "Sweden"]
+[WhiteFideId "8603820"]
+[BlackFideId "1710400"]
+[EventDate "2019.03.05"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. f3 e5 7. Nb3 Be6 8. Be3
+Nc6 9. Qe2 Rc8 10. O-O-O Na5 11. Qd2 b5 12. Kb1 Nc4 13. Bxc4 bxc4 14. Nc1 Rb8
+15. N1e2 Qc8 16. Ka1 Qb7 17. Rb1 d5 18. exd5 Nxd5 19. Nxd5 Qxd5 20. Qxd5 Bxd5
+21. Nc3 Bc6 22. Rhd1 Be7 23. Nd5 Bd8 24. b3 cxb3 25. cxb3 O-O 26. Rbc1 Bb7 27.
+Bc5 Re8 28. Bd6 Rc8 29. Rxc8 Bxc8 30. Nc7 Bxc7 31. Bxc7 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.4"]
+[White "Blomqvist,E"]
+[Black "Wei Yi"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2488"]
+[BlackElo "2733"]
+[ECO "B94"]
+[Opening "Sicilian"]
+[Variation "Najdorf, 6.Bg5"]
+[WhiteTeam "Sweden"]
+[BlackTeam "China"]
+[WhiteFideId "1709437"]
+[BlackFideId "8603405"]
+[EventDate "2019.03.05"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 Nbd7 7. Qe2 h6 8. Bh4
+g6 9. f4 e5 10. fxe5 dxe5 11. O-O-O Qc7 12. Nb3 b5 13. Rxd7 Nxd7 14. Nd5 Qb8 15.
+Bf6 Nxf6 16. Nxf6+ Ke7 17. Nd5+ Ke8 18. Nf6+ Ke7 19. Nd5+ Ke8 20. Nf6+ 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.4"]
+[White "Bu Xiangzhi"]
+[Black "Smith,Ax"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2731"]
+[BlackElo "2487"]
+[ECO "B36"]
+[Opening "Sicilian"]
+[Variation "accelerated fianchetto, Gurgenidze variation"]
+[WhiteTeam "China"]
+[BlackTeam "Sweden"]
+[WhiteFideId "8601445"]
+[BlackFideId "1707930"]
+[EventDate "2019.03.05"]
+
+1. Nf3 c5 2. c4 Nc6 3. d4 cxd4 4. Nxd4 g6 5. e4 Nf6 6. Nc3 Nxd4 7. Qxd4 d6 8.
+Be3 Bg7 9. f3 O-O 10. Qd2 Be6 11. Rc1 Qa5 12. Be2 Rfc8 13. b3 a6 14. Na4 Qxd2+
+15. Kxd2 Nd7 16. g4 f5 17. exf5 gxf5 18. h3 Rf8 19. f4 Rad8 20. g5 Nc5 21. Nc3
+Bxc3+ 22. Kxc3 Ne4+ 23. Kb4 Ng3 24. Rhe1 Nxe2 25. Rxe2 Rd7 26. Bd4 Bf7 27. h4
+Re8 28. Rce1 Rc7 29. a4 Rd7 30. Ka5 Rc7 31. Kb6 Rd7 32. Re3 Kf8 33. Rh3 e5 34.
+fxe5 Re6 35. Ka5 dxe5 36. Bxe5 f4 37. Bc3 Rxe1 38. Bxe1 Bh5 39. Rc3 Ke8 40. Kb6
+Kd8 41. c5 Kc8 42. Rc4 Re7 43. Bf2 Re6+ 44. Ka7 a5 45. c6 Rxc6 46. Rxc6+ bxc6
+47. Kb6 Bf7 48. Kxc6 Bxb3 49. Kb5 Kb7 50. Kxa5 Bd1 51. Kb5 Be2+ 52. Kc5 Ka6 53.
+Be1 f3 54. Bf2 Bd3 55. h5 Ka5 56. Kd4 Bb1 57. Ke3 Bc2 58. g6 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.4"]
+[White "Johansson,Linus"]
+[Black "Ni Hua"]
+[Result "0-1"]
+[WhiteTitle "IM"]
+[BlackTitle "GM"]
+[WhiteElo "2479"]
+[BlackElo "2683"]
+[ECO "E94"]
+[Opening "King's Indian"]
+[Variation "orthodox, 7...Nbd7"]
+[WhiteTeam "Sweden"]
+[BlackTeam "China"]
+[WhiteFideId "1711113"]
+[BlackFideId "8601160"]
+[EventDate "2019.03.05"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 O-O 5. Be2 d6 6. Nf3 Nbd7 7. O-O e5 8. Be3
+c6 9. d5 c5 10. Ne1 Ne8 11. Nd3 Qe7 12. Qd2 f5 13. exf5 gxf5 14. f4 e4 15. Nf2
+Ndf6 16. Kh1 h5 17. h3 h4 18. Rg1 Kf7 19. g4 hxg3 20. Rxg3 Rh8 21. Rag1 Bd7 22.
+Qd1 Bh6 23. a3 Ng7 24. b4 b6 25. Kg2 Kf8 26. h4 Be8 27. bxc5 bxc5 28. Qb3 Bh5
+29. Rb1 Kf7 30. Qb7 Rab8 31. Qxb8 Rxb8 32. Rxb8 Bxe2 33. Nxe2 Ngh5 34. Rh3 Qc7
+35. Rb5 Qc8 36. Kf1 Qa6 37. Bc1 Qa4 38. Rc3 Bg7 39. Bb2 Ng4 40. Rc1 Bxb2 41.
+Rxb2 Qxa3 42. Rb7+ Kg6 43. Rc3 Qa1+ 44. Rc1 Qf6 45. Nh3 Qxh4 46. Kg2 Ne3+ 47.
+Kh2 Nf6 48. Ng1 Nfg4+ 49. Kh1 Nf2+ 50. Kh2 Qg4 0-1
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.5"]
+[White "Jumabayev,R"]
+[Black "Maghsoodloo,Parham"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2609"]
+[BlackElo "2673"]
+[ECO "A80"]
+[Opening "Dutch"]
+[WhiteTeam "Kazakhstan"]
+[BlackTeam "Iran"]
+[WhiteFideId "13702661"]
+[BlackFideId "12539929"]
+[EventDate "2019.03.05"]
+
+1. d4 f5 2. Nf3 Nf6 3. c4 g6 4. e3 d6 5. Be2 Bg7 6. b4 e5 7. dxe5 Ng4 8. Nc3 Nc6
+9. Bb2 Ngxe5 10. Nxe5 Nxe5 11. Qc2 Be6 12. Nb5 O-O 13. O-O c6 14. Nd4 Bf7 15.
+Rad1 Qe7 16. Nb3 c5 17. Bxe5 Bxe5 18. b5 a6 19. b6 a5 20. g3 Ra6 21. Rb1 Rxb6
+22. Nxa5 Qc7 23. Nb3 Ra8 24. Rfd1 Rb4 25. Nc1 Rxb1 26. Qxb1 Ra6 27. Qc2 Qa5 28.
+Rd3 Qa4 29. Rb3 Ra8 30. Qd3 d5 31. Rxb7 dxc4 32. Qb1 Bd5 33. Rb6 Rd8 34. f3 Bc7
+35. Rb5 Qa3 36. Kf2 Re8 37. e4 fxe4 38. f4 g5 39. Rb7 Bxb7 40. Qxb7 Bxf4 41.
+Qd5+ Kh8 42. Qf7 Rg8 43. Qf6+ Rg7 44. Qf8+ Rg8 45. Qf6+ 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.5"]
+[White "Idani,P"]
+[Black "Ismagambetov,An"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2604"]
+[BlackElo "2545"]
+[ECO "B31"]
+[Opening "Sicilian"]
+[Variation "Nimzovich-Rossolimo attack (with ...g6, without ...d6)"]
+[WhiteTeam "Iran"]
+[BlackTeam "Kazakhstan"]
+[WhiteFideId "12510130"]
+[BlackFideId "13701525"]
+[EventDate "2019.03.05"]
+
+1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. Bxc6 dxc6 5. d3 Bg7 6. Nc3 Nf6 7. h3 Nd7 8. Be3
+e5 9. Qd2 h6 10. O-O b6 11. a4 a5 12. Nh2 Nf6 13. Rae1 Be6 14. Ne2 g5 15. Qc3
+Rg8 16. Ng3 Qc7 17. f3 O-O-O 18. Ng4 Nd7 19. Bf2 Bf8 20. Nh5 Rg6 21. Bg3 Bd6 22.
+Ne3 c4 23. Qd2 cxd3 24. Qxd3 Nc5 25. Qe2 Nxa4 26. Rd1 b5 27. c4 Bc5 28. cxb5
+Rxd1 29. Rxd1 Qb6 30. Bf2 Qxb5 31. Qd2 Bd4 32. Nc2 c5 33. Nxd4 exd4 34. Rc1 Kb7
+35. e5 Rg8 36. Nf6 Rb8 37. Ne4 Qb4 38. Qxb4+ axb4 39. Nxc5+ Nxc5 40. Rxc5 Rd8
+41. Be1 d3 42. Bd2 Kb6 43. Be3 Kb7 44. Bd2 Kb6 45. Be3 Kb7 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.5"]
+[White "Kazhgaleyev,M"]
+[Black "Tabatabaei,M"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2587"]
+[BlackElo "2600"]
+[ECO "A42"]
+[Opening "Modern defence"]
+[Variation "Averbakh system"]
+[WhiteTeam "Kazakhstan"]
+[BlackTeam "Iran"]
+[WhiteFideId "13700316"]
+[BlackFideId "12521213"]
+[EventDate "2019.03.05"]
+
+1. d4 g6 2. c4 Bg7 3. e4 d6 4. Nc3 e5 5. d5 a5 6. b3 f5 7. exf5 gxf5 8. Qh5+ Kf8
+9. Bb2 Nf6 10. Qd1 Na6 11. Be2 Nc5 12. Nf3 Bd7 13. O-O Rg8 14. Qc2 Nh5 15. g3 e4
+16. Ne1 Nf4 17. Ng2 Nfd3 18. Bxd3 Nxd3 19. Rad1 Nxb2 20. Qxb2 Qf6 21. Rc1 h5 22.
+Qe2 h4 23. Kh1 Bh6 24. Rc2 h3 25. Ne3 Re8 26. Nb5 c6 27. Nc7 Rc8 28. Ne6+ Bxe6
+29. dxe6 Ke7 30. Qh5 Rcf8 31. Qxh3 Rh8 32. Qg2 f4 33. gxf4 Bxf4 34. Ng4 Qh4 35.
+f3 exf3 36. Rxf3 Bxh2 37. Nxh2 Qxh2+ 38. Qxh2 Rxh2+ 39. Rxh2 Rxf3 40. Rh7+ Kxe6
+41. Rxb7 d5 42. cxd5+ cxd5 43. Kg2 Rf8 44. Rb5 d4 45. Rxa5 d3 46. Rh5 Rd8 47.
+Rh1 Kd5 48. Kf2 Kd4 49. Ke1 Re8+ 50. Kd1 Rg8 51. Rh4+ Ke3 52. Rh3+ Kd4 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.12"]
+[Round "7.5"]
+[White "Firouzja,Alireza"]
+[Black "Kostenko,P"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2657"]
+[BlackElo "2466"]
+[ECO "C11"]
+[Opening "French"]
+[Variation "Steinitz, Boleslavsky variation"]
+[WhiteTeam "Iran"]
+[BlackTeam "Kazakhstan"]
+[WhiteFideId "12573981"]
+[BlackFideId "13700669"]
+[EventDate "2019.03.05"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. f4 c5 6. Nf3 Nc6 7. Be3 a6 8. Qd2 b5
+9. Bd3 Qb6 10. Qf2 cxd4 11. Nxd4 Nxd4 12. Bxd4 Bc5 13. Bxc5 Nxc5 14. b4 Nxd3+
+15. cxd3 d4 16. Ne4 O-O 17. O-O Bb7 18. Nd6 Bd5 19. f5 exf5 20. Nxf5 Rfe8 21.
+Rae1 Qg6 22. Re2 Rad8 23. Qxd4 f6 24. Qb6 Kh8 25. Ne7 Qf7 26. exf6 Ba8 27. fxg7+
+Qxg7 28. Nf5 Qg5 29. Qd4+ Kg8 30. Ne7+ Qxe7 31. Rxe7 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.1"]
+[White "Grandelius,N"]
+[Black "Karjakin,Sergey"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2694"]
+[BlackElo "2753"]
+[ECO "C50"]
+[Opening "Giuoco Pianissimo"]
+[WhiteTeam "Sweden"]
+[BlackTeam "Russia"]
+[WhiteFideId "1710400"]
+[BlackFideId "14109603"]
+[EventDate "2019.03.05"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. O-O d6 6. c3 a6 7. a4 h6 8. Re1 O-O
+9. h3 a5 10. Bb5 Na7 11. d4 exd4 12. cxd4 Bb4 13. Bd2 Nxb5 14. axb5 Bd7 15. Qb3
+Bxb5 16. Bxb4 axb4 17. Rxa8 Qxa8 18. Qxb4 Qa4 19. Qd2 Bc6 20. Nc3 Qa8 21. d5 Bd7
+22. Nd4 Re8 23. Re3 c6 24. dxc6 bxc6 25. Nf3 Qb8 26. Qe2 c5 27. e5 dxe5 28. Rxe5
+Rxe5 29. Nxe5 Be6 30. Nf3 Qb4 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.1"]
+[White "Grischuk,A"]
+[Black "Tikkanen,H"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2771"]
+[BlackElo "2510"]
+[ECO "C18"]
+[Opening "French"]
+[Variation "Winawer, advance variation"]
+[WhiteTeam "Russia"]
+[BlackTeam "Sweden"]
+[WhiteFideId "4126025"]
+[BlackFideId "1706446"]
+[EventDate "2019.03.05"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. a3 Bxc3+ 6. bxc3 Qa5 7. Bd2 Qa4 8. Qg4
+Kf8 9. h4 Nc6 10. h5 Qxc2 11. Rc1 Qe4+ 12. Qxe4 dxe4 13. Ne2 f5 14. g4 Nge7 15.
+gxf5 Nxf5 16. Bg2 h6 17. Bxe4 Kf7 18. Rg1 Rd8 19. Bxf5 exf5 20. Be3 Be6 21. Nf4
+Bc4 22. e6+ Kg8 23. f3 Kh7 24. Kf2 Rac8 25. dxc5 Rc7 26. Rcd1 Re8 27. Rd6 Rce7
+28. Bd4 Nxd4 29. cxd4 Bxe6 30. Ng6 Bf7 31. Nxe7 Rxe7 32. Re1 Rc7 33. Re5 Bxh5
+34. Rxf5 Be8 35. Rf8 Bb5 36. f4 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.1"]
+[White "Blomqvist,E"]
+[Black "Andreikin,D"]
+[Result "0-1"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2488"]
+[BlackElo "2725"]
+[ECO "B13"]
+[Opening "Caro-Kann"]
+[Variation "exchange variation"]
+[WhiteTeam "Sweden"]
+[BlackTeam "Russia"]
+[WhiteFideId "1709437"]
+[BlackFideId "4158814"]
+[EventDate "2019.03.05"]
+
+1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Qc7 6. Ne2 Bg4 7. O-O e6 8. Qe1
+Be7 9. Bf4 Qb6 10. Nd2 Nf6 11. Rb1 O-O 12. Ng3 g6 13. f3 Bf5 14. Nxf5 exf5 15.
+Bg5 Rfe8 16. Qh4 Nd7 17. Bxe7 Rxe7 18. Rfd1 Rae8 19. Bf1 Qa5 20. a3 Qa4 21. Qf2
+Nb6 22. Bd3 Na5 23. Re1 Qd7 24. Rxe7 Qxe7 25. Bb5 Nc6 26. Kf1 Qd6 27. Kg1 a6 28.
+Bd3 Na4 29. Bc2 b5 30. Bxa4 bxa4 31. b4 axb3 32. Rxb3 Na5 33. Rb4 Qc7 34. Nb3
+Nc6 35. Ra4 Qb6 36. Qc2 Qb5 37. Nc5 Re1+ 38. Kf2 Qf1+ 39. Kg3 Re2 0-1
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.1"]
+[White "Artemiev,V"]
+[Black "Smith,Ax"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2736"]
+[BlackElo "2487"]
+[ECO "D06"]
+[Opening "QGD"]
+[Variation "symmetrical (Austrian) defence"]
+[WhiteTeam "Russia"]
+[BlackTeam "Sweden"]
+[WhiteFideId "24101605"]
+[BlackFideId "1707930"]
+[EventDate "2019.03.05"]
+
+1. d4 d5 2. c4 c5 3. e3 Nf6 4. Nf3 cxd4 5. exd4 g6 6. Nc3 Bg7 7. cxd5 O-O 8. Bc4
+Nbd7 9. d6 exd6 10. O-O Nb6 11. Bb3 Bf5 12. Re1 Qd7 13. a4 a5 14. Bf4 Rfe8 15.
+Nb5 Rxe1+ 16. Qxe1 Bf8 17. Rc1 Nbd5 18. Bg5 Rc8 19. Rxc8 Qxc8 20. Qxa5 Be4 21.
+Nc3 Bxf3 22. gxf3 Nxc3 23. Qxc3 Qf5 24. Bd2 d5 25. Bc2 Qh5 26. Bf4 Bh6 27. Qe3
+Bxf4 28. Qxf4 Kg7 29. Kg2 g5 30. Qe5 Qh4 31. Bf5 Qh6 32. a5 g4 33. fxg4 Qd2 34.
+Qe3 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.2"]
+[White "Ding Liren"]
+[Black "Adams,Mi"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2812"]
+[BlackElo "2708"]
+[ECO "A07"]
+[Opening "Reti"]
+[Variation "King's Indian attack (Barcza system)"]
+[WhiteTeam "China"]
+[BlackTeam "England"]
+[WhiteFideId "8603677"]
+[BlackFideId "400041"]
+[EventDate "2019.03.05"]
+
+1. Nf3 d5 2. g3 Nf6 3. Bg2 c5 4. O-O g6 5. d4 cxd4 6. Nxd4 Bg7 7. Nb3 O-O 8. Nc3
+e6 9. e4 Nc6 10. exd5 exd5 11. Bg5 h6 12. Be3 Re8 13. Qd2 Ng4 14. Bc5 Be6 15.
+Nxd5 Bxb2 16. Rad1 Bxd5 17. Bxd5 Qg5 18. Qxg5 hxg5 19. c4 Rac8 20. h3 Nf6 21.
+Be3 g4 22. Bg2 gxh3 23. Bxh3 Rc7 24. Kg2 Ne5 25. c5 Kg7 26. Bf4 Rce7 27. Rd2 Ba3
+28. Rd4 Nc6 29. Ra4 Bb4 30. Bd6 Re2 31. Nd4 Nxd4 32. Rxb4 Nc2 33. Rxb7 Ne3+ 34.
+Kf3 Nxf1 35. Bxf1 Rc2 36. Bb5 Re6 37. Rxa7 Ne4 38. Bd7 Rxf2+ 39. Ke3 Rff6 40.
+Bxe6 Rxe6 41. Bc7 Nxc5+ 42. Kd4 Na6 43. Be5+ Kf8 44. a3 Ke8 45. Kd5 Nc5 46. a4
+Nd7 47. Bc7 Nf6+ 48. Kc4 Rc6+ 49. Kb5 Rc2 50. a5 Kd7 51. Be5+ Ke6 52. Rc7 Ra2
+53. Bxf6 Kxf6 54. a6 Rb2+ 55. Kc6 Ra2 56. a7 Kg5 57. Rxf7 Kg4 58. Rg7 g5 59. Kb7 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.2"]
+[White "McShane,L"]
+[Black "Yu Yangyi"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2661"]
+[BlackElo "2761"]
+[ECO "C42"]
+[Opening "Petrov"]
+[Variation "Nimzovich attack"]
+[WhiteTeam "England"]
+[BlackTeam "China"]
+[WhiteFideId "404853"]
+[BlackFideId "8603820"]
+[EventDate "2019.03.05"]
+
+1. e4 e5 2. Nf3 Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. Nc3 Nxc3 6. dxc3 Be7 7. Be3 Nc6 8.
+Qd2 Be6 9. O-O-O Qd7 10. Kb1 Bf6 11. h4 O-O-O 12. Bg5 Qe7 13. Qf4 h6 14. Bxf6
+Qxf6 15. Qxf6 gxf6 16. Nd4 Ne5 17. Rd2 Rhg8 18. Ne2 Rde8 19. b3 Ng6 20. Ng3 Bd7
+21. Nh5 Re1+ 22. Kb2 f5 23. Nf6 Rd8 24. f3 Bc6 25. Re2 Rd1 26. Rf2 Rh8 27. Rh2
+Ne5 28. Nh5 Rg8 29. Be2 Re1 30. Nf4 Kd8 31. Rf1 Rxf1 32. Bxf1 Bd7 33. Kc1 Be6
+34. Kd2 a5 35. a4 Ng6 36. Nh5 Ne7 37. Bd3 Nd5 38. Bc4 Nb6 39. Bf1 Ke7 40. Rh1 c5
+41. c4 d5 42. cxd5 Nxd5 43. Rg1 Rd8 44. Bd3 Nb4 45. Nf4 c4 46. Nxe6 Kxe6 47.
+bxc4 b6 48. Ke3 Na6 49. Rb1 Rd6 50. Kf4 Rd4+ 51. Ke3 Rd6 52. Kf4 Rd4+ 53. Ke3
+Rd6 54. Kf4 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.2"]
+[White "Wei Yi"]
+[Black "Howell,D"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2733"]
+[BlackElo "2693"]
+[ECO "A15"]
+[Opening "English opening"]
+[WhiteTeam "China"]
+[BlackTeam "England"]
+[WhiteFideId "8603405"]
+[BlackFideId "410608"]
+[EventDate "2019.03.05"]
+
+1. Nf3 Nf6 2. c4 b6 3. g3 Bb7 4. Bg2 g6 5. d4 Bg7 6. O-O e6 7. Bf4 d6 8. Qc2 O-O
+9. Nc3 Nc6 10. Rad1 Qe7 11. Rfe1 Nxd4 12. Nxd4 Bxg2 13. Kxg2 e5 14. Be3 exd4 15.
+Bxd4 c6 16. Qd3 Rfe8 17. Qf3 Rac8 18. e4 Nd7 19. b3 Nc5 20. h4 h5 21. Qe3 Rcd8
+22. Bxg7 Kxg7 23. b4 Nd7 24. b5 Rc8 25. bxc6 Rxc6 26. Nd5 Qe6 27. Qc3+ f6 28.
+Qa3 a5 29. Rd4 Ne5 30. Qb3 Rec8 31. Rc1 Nd7 32. Qb5 Rc5 33. Qa6 Qf7 34. Nf4 R5c6
+35. Rxd6 Nc5 36. Rxc6 Nxa6 37. Rxc8 Qb7 38. Re8 Kf7 39. Rd8 Qxe4+ 40. f3 Qe7 41.
+Rcd1 Nc5 42. Rh8 Ne6 43. Rh7+ Ng7 44. Rd2 Qe8 45. Rd8 Qa4 46. Kh3 Qc6 47. Rhh8
+Ne6 48. Rh7+ Ng7 49. Kh2 g5 50. hxg5 fxg5 51. Nxh5 Qxf3 52. Rxg7+ Ke6 53. Rxg5
+Qf2+ 54. Kh3 Qf1+ 55. Kh4 Qxc4+ 56. Nf4+ Ke7 57. Rgd5 Qxa2 58. Kg5 Qa4 59. Ng6+ 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.2"]
+[White "Jones,G"]
+[Black "Bu Xiangzhi"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2681"]
+[BlackElo "2731"]
+[ECO "B51"]
+[Opening "Sicilian"]
+[Variation "Canal-Sokolsky (Nimzovich-Rossolimo, Moscow) attack"]
+[WhiteTeam "England"]
+[BlackTeam "China"]
+[WhiteFideId "409561"]
+[BlackFideId "8601445"]
+[EventDate "2019.03.05"]
+
+1. e4 c5 2. Nf3 d6 3. Bb5+ Nc6 4. O-O Bd7 5. Re1 Nf6 6. c3 a6 7. Bf1 Bg4 8. h3
+Bxf3 9. Qxf3 e6 10. d3 Be7 11. Nd2 O-O 12. g3 d5 13. Qe2 b5 14. Bg2 Rb8 15. Nf3
+Qb6 16. exd5 Nxd5 17. Ng5 Bxg5 18. Bxg5 h6 19. Bh4 b4 20. Qg4 Kh8 21. Rac1 bxc3
+22. bxc3 Nde7 23. d4 cxd4 24. cxd4 Nd5 25. Bxd5 exd5 26. Be7 Nxe7 27. Rxe7 Qf6
+28. Re5 Rb2 29. Qf5 Qxf5 30. Rxf5 Rxa2 31. Rxd5 Rb2 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.3"]
+[White "Adhiban,Baskaran"]
+[Black "Swiercz,D"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2683"]
+[BlackElo "2655"]
+[ECO "E04"]
+[Opening "Catalan"]
+[Variation "open, 5.Nf3"]
+[WhiteTeam "India"]
+[BlackTeam "United States of America"]
+[WhiteFideId "5018471"]
+[BlackFideId "1126881"]
+[EventDate "2019.03.05"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. g3 dxc4 5. Bg2 c5 6. O-O Nc6 7. Ne5 Bd7 8. Nxc4
+cxd4 9. Bf4 Be7 10. Nd6+ Kf8 11. Nxb7 Qb6 12. Nd6 Qc5 13. b4 Qxb4 14. a3 Qc5 15.
+Qb3 Qh5 16. Qc4 Nd5 17. Bf3 Qh3 18. Bg2 Qh5 19. Bf3 Qg6 20. Bxd5 exd5 21. Qxd5
+Qe6 22. Qxe6 Bxe6 23. Rc1 Na5 24. Nd2 g5 25. Be5 f6 26. Bxd4 Bxd6 27. Bxf6 Rg8
+28. Ne4 Kf7 29. Rc3 Nc4 30. Nxd6+ Nxd6 31. Be5 Nc4 32. Rf3+ Ke8 33. Bd4 a5 34.
+a4 Rb8 35. Rc1 Rb4 36. Ra1 Rb7 37. Bc3 Rf8 38. Rd3 Rff7 39. f3 Rfd7 40. g4 Kf7
+41. Rxd7+ Bxd7 42. Rd1 Be6 43. Kf2 Rb3 44. Be1 Ra3 45. Rd8 Rxa4 46. Rh8 Kg6 47.
+Re8 Bf7 48. Rc8 Ra3 49. Ra8 Kf6 50. Kg3 a4 51. h4 gxh4+ 52. Kxh4 Ke6 53. f4 Ra1
+54. f5+ Kd5 55. Bb4 h6 56. Rf8 Rh1+ 57. Kg3 Rb1 58. Be7 Rb7 59. Bf6 Nd6 60. Rd8
+Kc6 61. Be5 Rb3+ 62. Kh4 Nc4 63. Bg7 a3 64. Bxh6 a2 65. Bg7 Ne3 66. Rd3 Rxd3 67.
+exd3 Kd5 68. Bb2 Kd6 69. Kg5 Ke7 70. Kf4 Nd5+ 71. Kg5 Nb4 72. Kh6 Nxd3 73. Ba1
+Kf8 74. g5 Kg8 75. g6 Be8 76. f6 Nb4 77. Kg5 Nc2 78. Bb2 Ne3 79. f7+ Bxf7 80.
+gxf7+ Kxf7 81. Kf4 Nc4 82. Ba1 Ke6 83. Ke4 Nd2+ 84. Kd3 Nb3 85. Kc3 Nxa1 86. Kb2
+Ke5 87. Kxa1 Kd4 88. Kxa2 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.3"]
+[White "Sevian,Samuel"]
+[Black "Sasikiran,K"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2642"]
+[BlackElo "2678"]
+[ECO "C88"]
+[Opening "Ruy Lopez"]
+[Variation "closed, anti-Marshall 8.a4"]
+[WhiteTeam "United States of America"]
+[BlackTeam "India"]
+[WhiteFideId "2040506"]
+[BlackFideId "5004985"]
+[EventDate "2019.03.05"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. a4
+b4 9. d3 d6 10. a5 Be6 11. Bxe6 fxe6 12. Nbd2 Qe8 13. c3 Rb8 14. d4 bxc3 15.
+bxc3 exd4 16. cxd4 Nb4 17. Qb3 Nh5 18. Qxe6+ Kh8 19. Rb1 Nf4 20. Qc4 Qg6 21. g3
+d5 22. exd5 Bd6 23. Ba3 Nh3+ 24. Kf1 Qh5 25. Rb3 Nxd5 26. Rxb8 Rxb8 27. Bxd6
+cxd6 28. Qxa6 Rd8 29. Qc6 Nhf4 30. gxf4 Nxf4 31. Re4 Qf5 32. Re8+ 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.3"]
+[White "Ganguly,S"]
+[Black "Onischuk,Al"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2633"]
+[BlackElo "2647"]
+[ECO "E06"]
+[Opening "Catalan"]
+[Variation "closed, 5.Nf3"]
+[WhiteTeam "India"]
+[BlackTeam "United States of America"]
+[WhiteFideId "5002150"]
+[BlackFideId "14101025"]
+[EventDate "2019.03.05"]
+
+1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O dxc4 7. Qc2 a6 8. a4
+Bd7 9. Qxc4 Bc6 10. Bg5 Nbd7 11. Nc3 h6 12. Bxf6 Nxf6 13. a5 Qd6 14. Rfd1 b5 15.
+axb6 cxb6 16. Qd3 Bb7 17. e4 Qb8 18. e5 Nd5 19. Nxd5 Bxd5 20. Rxa6 Rxa6 21. Qxa6
+Rd8 22. Ne1 Bxg2 23. Kxg2 Qc7 24. Qe2 Qc6+ 25. Qf3 Qb5 26. b3 Qa5 27. h4 Bf8 28.
+Qe4 Bb4 29. Nc2 Bc3 30. Rd3 Bd2 31. Qc6 Bc1 32. Rd1 Bb2 33. h5 Qa8 34. Qxa8 Rxa8
+35. Ne3 Rd8 36. d5 Bxe5 37. dxe6 Re8 38. f4 Bf6 39. exf7+ Kxf7 40. Nc4 Re2+ 41.
+Kf3 Rc2 42. Ke4 Rh2 43. Rd5 g5 44. Rd7+ Ke8 45. Rd6 Bg7 46. Re6+ Kf7 47. Rxb6
+gxf4 48. g4 Bf6 49. Nd6+ Kf8 50. Kxf4 Bg5+ 51. Kg3 Rd2 52. Nf5 Rd3+ 53. Kg2 Rc3 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.3"]
+[White "Lenderman,A"]
+[Black "Sethuraman,S"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2637"]
+[BlackElo "2637"]
+[ECO "A15"]
+[Opening "English opening"]
+[WhiteTeam "United States of America"]
+[BlackTeam "India"]
+[WhiteFideId "2021285"]
+[BlackFideId "5021596"]
+[EventDate "2019.03.05"]
+
+1. Nf3 Nf6 2. c4 e6 3. Nc3 d5 4. e3 dxc4 5. Bxc4 a6 6. b3 b5 7. Be2 Bb7 8. Bb2
+c5 9. O-O Be7 10. Rc1 O-O 11. Qc2 Nbd7 12. Rfd1 Rc8 13. Qb1 Qb6 14. Qa1 Rfd8 15.
+a4 Bc6 16. Qa2 Qb7 17. axb5 axb5 18. Ra1 Ra8 19. Qb1 Nd5 20. Nxd5 Bxd5 21. Qc2
+h6 22. h3 Rdc8 23. Rdc1 c4 24. bxc4 bxc4 25. Bd4 Bf6 26. Rxa8 Rxa8 27. Bxf6 Nxf6
+28. Ne1 Rd8 29. Bxc4 Bxc4 30. Qxc4 Rxd2 31. Nf3 Rd5 1/2-1/2
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.4"]
+[White "Maghsoodloo,Parham"]
+[Black "Naiditsch,A"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2673"]
+[BlackElo "2710"]
+[ECO "A13"]
+[Opening "English opening"]
+[Variation "Agincourt variation"]
+[WhiteTeam "Iran"]
+[BlackTeam "Azerbaijan"]
+[WhiteFideId "12539929"]
+[BlackFideId "4650891"]
+[EventDate "2019.03.05"]
+
+1. Nf3 d5 2. c4 e6 3. g3 dxc4 4. Qa4+ Bd7 5. Qxc4 c5 6. Bg2 Bc6 7. b3 Be7 8. Bb2
+Nf6 9. O-O O-O 10. d3 Nbd7 11. Nbd2 Rc8 12. e4 Ng4 13. h3 Bf6 14. d4 Nh6 15. Qe2
+Nb6 16. Qe3 cxd4 17. Nxd4 Bxd4 18. Bxd4 f5 19. Bc5 Rf7 20. Bxb6 axb6 21. Nc4
+fxe4 22. Rad1 Qf8 23. Bxe4 Nf5 24. Bxf5 exf5 25. Nd6 Re7 26. Qg5 h6 27. Qg6 Be8
+28. Qxf5 Qxf5 29. Nxf5 Re5 30. Nd4 Ra5 31. Rd2 Rca8 32. Re1 Bd7 33. a4 Rd5 34.
+g4 h5 35. f3 hxg4 36. fxg4 b5 37. axb5 Bxb5 38. Red1 Ra3 39. Kf2 Be8 40. h4 Bf7
+41. b4 Rd6 42. Nf3 Rxd2+ 43. Rxd2 Kf8 44. Kg3 Rb3 45. Rd4 b5 46. Kf4 Bc4 47. Ne5
+Kg8 48. Nc6 Kh7 49. h5 Rb1 50. Rd7 Be2 51. Kg5 Rg1 52. Ne5 Rh1 53. Re7 Bd1 54.
+Ng6 Bb3 55. Nh4 Kh8 56. Nf5 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.4"]
+[White "Mamedov,Rau"]
+[Black "Idani,P"]
+[Result "1-0"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2701"]
+[BlackElo "2604"]
+[ECO "B23"]
+[Opening "Sicilian"]
+[Variation "closed"]
+[WhiteTeam "Azerbaijan"]
+[BlackTeam "Iran"]
+[WhiteFideId "13401653"]
+[BlackFideId "12510130"]
+[EventDate "2019.03.05"]
+
+1. e4 c5 2. Nc3 d6 3. Bb5+ Bd7 4. Bxd7+ Qxd7 5. d4 cxd4 6. Qxd4 Nc6 7. Qd3 g6 8.
+Nf3 Bg7 9. Bg5 Nf6 10. Rd1 O-O 11. O-O h6 12. Bc1 Qd8 13. Nd5 Nd7 14. Qa3 Rc8
+15. Rfe1 Re8 16. Bd2 Bf8 17. Ne3 e6 18. b4 a5 19. b5 d5 20. Qb3 Nc5 21. Qb1 Nxe4
+22. bxc6 bxc6 23. Qc1 h5 24. Nf1 Bg7 25. Bh6 Nc3 26. Bxg7 Kxg7 27. Rd3 Qf6 28.
+Ng5 Rc7 29. Qd2 Nb5 30. Rf3 Qd4 31. Rd3 Qb4 32. c3 Qc5 33. Ng3 h4 34. Nf1 e5 35.
+Rh3 f6 36. Rxh4 fxg5 37. Qxg5 Qd6 38. Ng3 Rf7 39. Rh6 Re6 40. f4 Qc5+ 41. Kh1 e4
+42. f5 Qxc3 43. Rf1 Qe5 44. Rh7+ 1-0
+
+[Event "12th World Teams 2019"]
+[Site "Astana KAZ"]
+[Date "2019.03.13"]
+[Round "8.4"]
+[White "Tabatabaei,M"]
+[Black "Guseinov,G"]
+[Result "1/2-1/2"]
+[WhiteTitle "GM"]
+[BlackTitle "GM"]
+[WhiteElo "2600"]
+[BlackElo "2664"]
+[ECO "E94"]
+[Opening "King's Indian"]
+[Variation "orthodox, Donner variation"]
+[WhiteTeam "Iran"]
+[BlackTeam "Azerbaijan"]
+[WhiteFideId "12521213"]
+[BlackFideId "13401378"]
+[EventDate "2019.03.05"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 c6 7. O-O e5 8. d5 Na6
+9. Be3 Ng4 10. Bg5 f6 11. Bd2 f5 12. Ne1 Nf6 13. f3 fxe4 14. fxe4 Nc5 15. Qc2
+cxd5 16. cxd5 Bd7 17. Rc1 Rc8 18. Qb1 Qb6 19. Kh1 Na4 20. Nxa4 Bxa4 21. Nf3 Rxc1
+22. Rxc1 Bb5 23. Bxb5 Qxb5 24. Qc2 Qe2 25. Re1 Qf2 26. Qc4 Ng4 27. Rf1 Qb6 28.
+h3 Ne3 29. Bxe3 Qxe3 30. Qc2 Bh6 31. Re1 Qb6 32. Kh2 Bf4+ 33. g3 Bd2 34. Rf1 Qe3
+35. Kg2 Bb4 36. Nh2 Rxf1 37. Nxf1 Qe1 38. Qc8+ Kg7 39. Qd7+ Kh6 40. Qg4 Kg7 41.
+Qd7+ Kh6 42. Qg4 Kg7 43. Qd7+ 1/2-1/2
