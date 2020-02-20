@@ -10,7 +10,7 @@ User should:
 
 In folder with *main.py* run:
 ```bash
-pipenv installd
+pipenv install
 pipenv shell
 ```
 
@@ -65,7 +65,7 @@ Jest możliwe dostosowywanie filtru za pomocą parametru *n_ignore* dającego mo
 ### *better_than_second*
 
 Filtra ma za zadanie sprawdzić o ile lepszy jest ruch najlepszy of drugiego najlepszego ruchu dla zadanej głębokości. 
-Jeżeli istnieje wiele ruchów z tej samej pozycji o podobnej jakości (wartość *cp*) to ten ruch prawdopodobnie jest warty analizy, bo są dla niego dostępne niedużo gorsze alternatywy.
+Jeżeli istnieje wiele ruchów z tej samej pozycji o podobnej jakości (wartość *cp*) to ten ruch prawdopodobnie nie jest warty analizy, bo są dla niego dostępne niedużo gorsze alternatywy.
 
 Jest możliwe dostosowywanie filtru za pomocą parametru *min_diff* dającego możliwość wyboru różnicy w *cp* od której najlepszy ruch można uznać za wystarczająco lepszy od kolejnego.
 
